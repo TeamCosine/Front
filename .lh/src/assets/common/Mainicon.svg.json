@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/assets/common/Mainicon.svg",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1689420473225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1689420473225,
+            "name": "Commit-0",
+            "content": "<svg width=\"608\" height=\"217\" viewBox=\"0 0 608 217\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<rect x=\"212\" y=\"196.339\" width=\"182\" height=\"20\" rx=\"5\" fill=\"#D9D9D9\"/>\n<circle cx=\"282.5\" cy=\"53.8386\" r=\"22.5\" fill=\"#006FFF\"/>\n<circle cx=\"326.5\" cy=\"53.8386\" r=\"22.5\" fill=\"#006FFF\"/>\n<circle cx=\"283\" cy=\"52.3386\" r=\"10\" fill=\"white\"/>\n<circle cx=\"326\" cy=\"52.3386\" r=\"10\" fill=\"white\"/>\n<circle cx=\"327.5\" cy=\"55.8386\" r=\"7.5\" fill=\"black\"/>\n<circle cx=\"284.5\" cy=\"55.8386\" r=\"7.5\" fill=\"black\"/>\n<path d=\"M253.29 202.339V56.8841H354.71V85.4352H288.446V115.265H349.526V143.887H288.446V173.787H354.71V202.339H253.29Z\" fill=\"#006FFF\"/>\n<path d=\"M235 62.3386C232.531 21.5755 257.269 19.8598 270.287 18.957\" stroke=\"#D9D9D9\" stroke-width=\"7\" stroke-linecap=\"round\"/>\n<path d=\"M223.982 56.3823C225.012 10.2204 253.429 9.34335 268.383 8.88185\" stroke=\"#D9D9D9\" stroke-width=\"7\" stroke-linecap=\"round\"/>\n<rect x=\"219.173\" y=\"24.7391\" width=\"33\" height=\"6\" rx=\"3\" transform=\"rotate(30 219.173 24.7391)\" fill=\"#D9D9D9\"/>\n<rect x=\"218\" y=\"35.3386\" width=\"33\" height=\"6\" rx=\"3\" transform=\"rotate(30 218 35.3386)\" fill=\"#D9D9D9\"/>\n</svg>"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/pages/MyInfo.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1689420315887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1689422576960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n //내정보 페이지\n import React from \"react\";\n-import styled from 'styled-component';\n+import styled from 'styled-component;\n import Card from \"../components/MyInfo/Card\";\n \n const Title = styled.div`\n     display: flex;\n"
+                }
+            ],
+            "date": 1689420315887,
+            "name": "Commit-0",
+            "content": "//내정보 페이지\nimport React from \"react\";\nimport styled from 'styled-component';\nimport Card from \"../components/MyInfo/Card\";\n\nconst Title = styled.div`\n    display: flex;\n    text-align: center;\n    font-size: 30px;\n    font-weight: 700;\n    color :black;\n`;\nconst Container = styled.div`\n   flex-direction: row;\n`;\nconst MyLike = styled.div``;\nconst MyWrite = styled.div``;\nconst Nick = styled.div`\n    display: flex;\n    font-size: 50px;\n    font-weight: 700;\n\n`;\n\nconst MyInfo =() =>{\n\n    return (\n        <>\n        <Title>My Page</Title>\n        <Nick>\n            <p>닉네임님</p>\n            \n\n        </Nick>\n\n        <Container>\n            <MyLike>\n                <p>💙 좋아하는 게시물</p>\n                <Container>\n                    <Card />\n                    <Card />\n                    <Card />\n\n                </Container>\n            </MyLike>\n            <MyWrite>\n                <p>✍🏻 내가 쓴 게시물</p>\n                <Container>\n                    <Card />\n                    <Card />\n                    <Card />\n                </Container>\n\n            </MyWrite>\n        </Container>\n        </>\n\n    )\n}\n\nexport default MyInfo;"
+        }
+    ]
+}

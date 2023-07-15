@@ -1,0 +1,82 @@
+{
+    "sourceFile": "src/pages/Home.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 16,
+            "patches": [
+                {
+                    "date": 1689420214532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1689422547711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n //메인 페이지\n import React from \"react\";\n-import styled from \"styled-component\";\n+import styled from \"styled-components\";\n import Card from \"../components/home/Card\";\n \n const Title = styled.div`\n     font-size: 40px;\n"
+                },
+                {
+                    "date": 1689424906828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     font-size: 40px;\n     text-align: center;\n     font-weight: 800;\n     display: flex;\n+    color : #006FFF\n `;\n const Row = styled.div`\n    flex-direction: column;\n    display: flex;\n"
+                },
+                {
+                    "date": 1689424937018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,10 @@\n     font-size: 40px;\n     text-align: center;\n     font-weight: 800;\n     display: flex;\n-    color : #006FFF\n+    color : #006fff;\n+\n `;\n const Row = styled.div`\n    flex-direction: column;\n    display: flex;\n@@ -48,9 +49,9 @@\n `;\n \n const Home = () =>{\n     return (\n-        <>\n+        <Box>\n           <Title>이화의 개발자👩‍💻 여러분, 환영합니다👋</Title>\n           <HomeContainer>\n           <Row>\n             <p>🚀 공지사항</p>\n"
+                },
+                {
+                    "date": 1689424954697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,11 @@\n //메인 페이지\n import React from \"react\";\n import styled from \"styled-components\";\n import Card from \"../components/home/Card\";\n+const Box = styled.div`\n+   \n+`;\n \n const Title = styled.div`\n     font-size: 40px;\n     text-align: center;\n@@ -89,9 +92,9 @@\n             </MenuContainer>\n         \n           </Menu>\n \n-        </>\n+        </Box>\n     )\n \n }\n \n"
+                },
+                {
+                    "date": 1689424961525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,10 @@\n import React from \"react\";\n import styled from \"styled-components\";\n import Card from \"../components/home/Card\";\n const Box = styled.div`\n-   \n+   display: flex;\n+   flex\n `;\n \n const Title = styled.div`\n     font-size: 40px;\n"
+                },
+                {
+                    "date": 1689424967118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,10 @@\n import styled from \"styled-components\";\n import Card from \"../components/home/Card\";\n const Box = styled.div`\n    display: flex;\n-   flex\n+   flex-direction: column;\n+   \n `;\n \n const Title = styled.div`\n     font-size: 40px;\n"
+                },
+                {
+                    "date": 1689424979684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n import Card from \"../components/home/Card\";\n const Box = styled.div`\n    display: flex;\n    flex-direction: column;\n+   align-items: center;\n    \n `;\n \n const Title = styled.div`\n"
+                },
+                {
+                    "date": 1689424989134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n const Box = styled.div`\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n-   \n+   justify-content: center;\n `;\n \n const Title = styled.div`\n     font-size: 40px;\n"
+                },
+                {
+                    "date": 1689425014480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,9 @@\n           <HomeContainer>\n           <Row>\n             <p>🚀 공지사항</p>\n             <Container>\n+                <Card/\n \n             </Container>\n           </Row>\n           <Row>\n"
+                },
+                {
+                    "date": 1689425020350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,11 @@\n           <HomeContainer>\n           <Row>\n             <p>🚀 공지사항</p>\n             <Container>\n-                <Card/\n+                <Card/>\n+                <Card/>\n+                <Card/>\n \n             </Container>\n           </Row>\n           <Row>\n"
+                },
+                {
+                    "date": 1689425036764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,108 @@\n+//메인 페이지\n+import React from \"react\";\n+import styled from \"styled-components\";\n+import Card from \"../components/home/Card\";\n+import Sidebar from \"../components/common/Sidebar\";\n+const Box = styled.div`\n+   display: flex;\n+   flex-direction: column;\n+   align-items: center;\n+   justify-content: center;\n+`;\n+\n+const Title = styled.div`\n+    font-size: 40px;\n+    text-align: center;\n+    font-weight: 800;\n+    display: flex;\n+    color : #006fff;\n+\n+`;\n+const Row = styled.div`\n+   flex-direction: column;\n+   display: flex;\n+   \n+`;\n+const Container = styled.div`\n+   background-color: #D9D9D9;\n+   border-radius: 15px;\n+   width : 23%;\n+   flex-direction: column;\n+   justify-content: center;\n+   align-items: center;\n+   \n+`;\n+const HomeContainer = styled.div`\n+   flex-direction: row;\n+   margin-top: 20px;\n+   justify-content: center;\n+   justify-items: center;\n+\n+`;\n+const Menu = styled.div``;\n+const MenuContainer=styled.div`\n+   display: flex;\n+   flex-direction: row;\n+   justify-items: center;\n+   text-align: center;\n+`;\n+const MenuItem = styled.div`\n+   background-color: #E8F1FD;\n+   padding-top :2rem;\n+   padding-bottom : 2rem;\n+   border-radius: 15px;\n+   width : 180px;\n+   height : 180px;\n+`;\n+\n+const Home = () =>{\n+    return (\n+        <Box>\n+          <Title>이화의 개발자👩‍💻 여러분, 환영합니다👋</Title>\n+          <HomeContainer>\n+          <Row>\n+            <p>🚀 공지사항</p>\n+            <Container>\n+                <Card/>\n+                <Card/>\n+                <Card/>\n+\n+            </Container>\n+          </Row>\n+          <Row>\n+            <p>🌈 현재 인기글을 확인하세요!</p>\n+            <Container>\n+                <Card />\n+                <Card />\n+                <Card />\n+\n+            </Container>\n+          </Row>\n+          </HomeContainer>\n+          <Menu>\n+            <p>🤩 흥미로운 게시판을 둘러보세요</p>\n+            <MenuContainer>\n+                <MenuItem>\n+                   <p>💡정보 공유</p>\n+                   <p>개발 지식이나 최신 정보를 공유해요!</p>\n+                </MenuItem>\n+                <MenuItem>\n+                  <p>👥팀원 모집</p>\n+                  <p>함께 공모전, 프로젝트를 진행해요!</p>\n+                </MenuItem>\n+                <MenuItem>\n+                  <p>❓QNA</p>\n+                  <p>어려운 부분을 질문하고 답해요!</p>\n+                </MenuItem>\n+                <MenuItem><p>🙃자유게시판</p><p>자유롭게 소통해요!</p></MenuItem>\n+                \n+            </MenuContainer>\n+        \n+          </Menu>\n+\n+        </Box>\n+    )\n+\n+}\n+\n+export default Home;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689425060173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,9 @@\n \n const Home = () =>{\n     return (\n         <Box>\n+            \n           <Title>이화의 개발자👩‍💻 여러분, 환영합니다👋</Title>\n           <HomeContainer>\n           <Row>\n             <p>🚀 공지사항</p>\n@@ -104,112 +105,5 @@\n     )\n \n }\n \n-export default Home;\n-//메인 페이지\n-import React from \"react\";\n-import styled from \"styled-components\";\n-import Card from \"../components/home/Card\";\n-const Box = styled.div`\n-   display: flex;\n-   flex-direction: column;\n-   align-items: center;\n-   justify-content: center;\n-`;\n-\n-const Title = styled.div`\n-    font-size: 40px;\n-    text-align: center;\n-    font-weight: 800;\n-    display: flex;\n-    color : #006fff;\n-\n-`;\n-const Row = styled.div`\n-   flex-direction: column;\n-   display: flex;\n-   \n-`;\n-const Container = styled.div`\n-   background-color: #D9D9D9;\n-   border-radius: 15px;\n-   width : 23%;\n-   flex-direction: column;\n-   justify-content: center;\n-   align-items: center;\n-   \n-`;\n-const HomeContainer = styled.div`\n-   flex-direction: row;\n-   margin-top: 20px;\n-   justify-content: center;\n-   justify-items: center;\n-\n-`;\n-const Menu = styled.div``;\n-const MenuContainer=styled.div`\n-   display: flex;\n-   flex-direction: row;\n-   justify-items: center;\n-   text-align: center;\n-`;\n-const MenuItem = styled.div`\n-   background-color: #E8F1FD;\n-   padding-top :2rem;\n-   padding-bottom : 2rem;\n-   border-radius: 15px;\n-   width : 180px;\n-   height : 180px;\n-`;\n-\n-const Home = () =>{\n-    return (\n-        <Box>\n-          <Title>이화의 개발자👩‍💻 여러분, 환영합니다👋</Title>\n-          <HomeContainer>\n-          <Row>\n-            <p>🚀 공지사항</p>\n-            <Container>\n-                <Card/>\n-                <Card/>\n-                <Card/>\n-\n-            </Container>\n-          </Row>\n-          <Row>\n-            <p>🌈 현재 인기글을 확인하세요!</p>\n-            <Container>\n-                <Card />\n-                <Card />\n-                <Card />\n-\n-            </Container>\n-          </Row>\n-          </HomeContainer>\n-          <Menu>\n-            <p>🤩 흥미로운 게시판을 둘러보세요</p>\n-            <MenuContainer>\n-                <MenuItem>\n-                   <p>💡정보 공유</p>\n-                   <p>개발 지식이나 최신 정보를 공유해요!</p>\n-                </MenuItem>\n-                <MenuItem>\n-                  <p>👥팀원 모집</p>\n-                  <p>함께 공모전, 프로젝트를 진행해요!</p>\n-                </MenuItem>\n-                <MenuItem>\n-                  <p>❓QNA</p>\n-                  <p>어려운 부분을 질문하고 답해요!</p>\n-                </MenuItem>\n-                <MenuItem><p>🙃자유게시판</p><p>자유롭게 소통해요!</p></MenuItem>\n-                \n-            </MenuContainer>\n-        \n-          </Menu>\n-\n-        </Box>\n-    )\n-\n-}\n-\n export default Home;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689425067069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,10 +56,11 @@\n `;\n \n const Home = () =>{\n     return (\n+        <Sidebar/>\n         <Box>\n-            \n+         \n           <Title>이화의 개발자👩‍💻 여러분, 환영합니다👋</Title>\n           <HomeContainer>\n           <Row>\n             <p>🚀 공지사항</p>\n"
+                },
+                {
+                    "date": 1689425077951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n `;\n \n const Home = () =>{\n     return (\n-        <Sidebar/>\n+        \n         <Box>\n          \n           <Title>이화의 개발자👩‍💻 여러분, 환영합니다👋</Title>\n           <HomeContainer>\n"
+                },
+                {
+                    "date": 1689425089765,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n const Home = () =>{\n     return (\n         \n         <Box>\n-            <Sidebar/>\n+            \n          \n           <Title>이화의 개발자👩‍💻 여러분, 환영합니다👋</Title>\n           <HomeContainer>\n           <Row>\n"
+                },
+                {
+                    "date": 1689425160626,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n    flex-direction: row;\n    margin-top: 20px;\n    justify-content: center;\n    justify-items: center;\n-   ju\n+   justify-content: ;\n \n `;\n const Menu = styled.div``;\n const MenuContainer=styled.div`\n"
+                }
+            ],
+            "date": 1689420214532,
+            "name": "Commit-0",
+            "content": "//메인 페이지\nimport React from \"react\";\nimport styled from \"styled-component\";\nimport Card from \"../components/home/Card\";\n\nconst Title = styled.div`\n    font-size: 40px;\n    text-align: center;\n    font-weight: 800;\n    display: flex;\n`;\nconst Row = styled.div`\n   flex-direction: column;\n   display: flex;\n   \n`;\nconst Container = styled.div`\n   background-color: #D9D9D9;\n   border-radius: 15px;\n   width : 23%;\n   flex-direction: column;\n   justify-content: center;\n   align-items: center;\n   \n`;\nconst HomeContainer = styled.div`\n   flex-direction: row;\n   margin-top: 20px;\n   justify-content: center;\n   justify-items: center;\n\n`;\nconst Menu = styled.div``;\nconst MenuContainer=styled.div`\n   display: flex;\n   flex-direction: row;\n   justify-items: center;\n   text-align: center;\n`;\nconst MenuItem = styled.div`\n   background-color: #E8F1FD;\n   padding-top :2rem;\n   padding-bottom : 2rem;\n   border-radius: 15px;\n   width : 180px;\n   height : 180px;\n`;\n\nconst Home = () =>{\n    return (\n        <>\n          <Title>이화의 개발자👩‍💻 여러분, 환영합니다👋</Title>\n          <HomeContainer>\n          <Row>\n            <p>🚀 공지사항</p>\n            <Container>\n\n            </Container>\n          </Row>\n          <Row>\n            <p>🌈 현재 인기글을 확인하세요!</p>\n            <Container>\n                <Card />\n                <Card />\n                <Card />\n\n            </Container>\n          </Row>\n          </HomeContainer>\n          <Menu>\n            <p>🤩 흥미로운 게시판을 둘러보세요</p>\n            <MenuContainer>\n                <MenuItem>\n                   <p>💡정보 공유</p>\n                   <p>개발 지식이나 최신 정보를 공유해요!</p>\n                </MenuItem>\n                <MenuItem>\n                  <p>👥팀원 모집</p>\n                  <p>함께 공모전, 프로젝트를 진행해요!</p>\n                </MenuItem>\n                <MenuItem>\n                  <p>❓QNA</p>\n                  <p>어려운 부분을 질문하고 답해요!</p>\n                </MenuItem>\n                <MenuItem><p>🙃자유게시판</p><p>자유롭게 소통해요!</p></MenuItem>\n                \n            </MenuContainer>\n        \n          </Menu>\n\n        </>\n    )\n\n}\n\nexport default Home;"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "sourceFile": "src/components/QNA/Card.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1689428713441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1689428719252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-import React from \"react\";\n\\ No newline at end of file\n+import React from \"react\";\n+import { Styled } from \"styled-components/dist/constructors/constructWithOptions\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689428730148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n import React from \"react\";\n-import { Styled } from \"styled-components/dist/constructors/constructWithOptions\";\n\\ No newline at end of file\n+import styled from \"styled-components\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689428740556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,8 @@\n import React from \"react\";\n-import styled from \"styled-components\";\n\\ No newline at end of file\n+import styled from \"styled-components\";\n+\n+const Card = () =>{\n+\n+}\n+\n+export default Card;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689429226230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from \"react\";\n import styled from \"styled-components\";\n \n const Card = () =>{\n-\n+    \n }\n \n export default Card;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689429235694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n import React from \"react\";\n import styled from \"styled-components\";\n \n const Card = () =>{\n-    \n+    return (\n+        \n+    )\n }\n \n export default Card;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689429246636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import React from \"react\";\n+import styled from \"styled-components\";\n+\n+const Container = \n+\n+const Card = () =>{\n+    return (\n+        <Container>\n+\n+        </Container>\n+    )\n+}\n+\n+export default Card;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689429253841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from \"react\";\n import styled from \"styled-components\";\n \n-const Container = \n+const Container = styled.div``;\n \n const Card = () =>{\n     return (\n         <Container>\n@@ -10,15 +10,5 @@\n         </Container>\n     )\n }\n \n-export default Card;\n-import React from \"react\";\n-import styled from \"styled-components\";\n-\n-const Card = () =>{\n-    return (\n-        \n-    )\n-}\n-\n export default Card;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689429262353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n import React from \"react\";\n import styled from \"styled-components\";\n \n-const Container = styled.div``;\n+const Container = styled.div`\n+    borde\n+`;\n \n const Card = () =>{\n     return (\n         <Container>\n"
+                },
+                {
+                    "date": 1689429289274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n import React from \"react\";\n import styled from \"styled-components\";\n \n const Container = styled.div`\n-    borde\n+    border-radius: 10px;\n+    width : 20vw;\n+    \n `;\n \n const Card = () =>{\n     return (\n"
+                },
+                {
+                    "date": 1689429295459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n const Container = styled.div`\n     border-radius: 10px;\n     width : 20vw;\n-    \n+    border-color: #;\n `;\n \n const Card = () =>{\n     return (\n"
+                },
+                {
+                    "date": 1689429300936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n const Container = styled.div`\n     border-radius: 10px;\n     width : 20vw;\n-    border-color: #D8;\n+    border-color: #D8#8;\n `;\n \n const Card = () =>{\n     return (\n"
+                },
+                {
+                    "date": 1689429328117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+import React from \"react\";\n+import styled from \"styled-components\";\n+\n+const Container = styled.div`\n+    border-radius: 10px;\n+    width : 20vw;\n+    border-color: #D8E8FD;\n+    \n+`;\n+\n+const Card = () =>{\n+    return (\n+        <Container>\n+            <Title></Title>\n+\n+        </Container>\n+    )\n+}\n+\n+export default Card;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1689428713441,
+            "name": "Commit-0",
+            "content": "import React from \"react\";"
+        }
+    ]
+}

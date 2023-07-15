@@ -1,0 +1,58 @@
+{
+    "sourceFile": "src/pages/Login.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1689422673899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1689422731195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react';\n-import styled from 'styled-component';\n+import styled from 'styled-components';\n \n \n const Title = styled.p`\n    text-align: center;\n"
+                },
+                {
+                    "date": 1689422901476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \n const Login =() =>{\n \n     return (\n-        <>\n+        <Login>\n         <Title>이화인들을 위한, 이화인들에 의한 개발자 커뮤니티</Title>\n         <Container>\n \n             <InputContainer>\n"
+                },
+                {
+                    "date": 1689422917616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \n const Login =() =>{\n \n     return (\n-        <Login>\n+        <Login styled=>\n         <Title>이화인들을 위한, 이화인들에 의한 개발자 커뮤니티</Title>\n         <Container>\n \n             <InputContainer>\n@@ -28,9 +28,9 @@\n         </Container>\n         <ButtonContainer>\n \n         </ButtonContainer>\n-        </>\n+        </Login>\n     )\n \n }\n \n"
+                },
+                {
+                    "date": 1689422927895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \n const Login =() =>{\n \n     return (\n-        <Login styled=>\n+        <Login styled={{background-color:}}>\n         <Title>이화인들을 위한, 이화인들에 의한 개발자 커뮤니티</Title>\n         <Container>\n \n             <InputContainer>\n"
+                },
+                {
+                    "date": 1689422936723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \n const Login =() =>{\n \n     return (\n-        <Login styled={{background-color:}}>\n+        <Login styled={{\"background-color\"}}>\n         <Title>이화인들을 위한, 이화인들에 의한 개발자 커뮤니티</Title>\n         <Container>\n \n             <InputContainer>\n"
+                },
+                {
+                    "date": 1689422949930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \n const Login =() =>{\n \n     return (\n-        <Login styled={{\"background-color\"}}>\n+        <Logincontainer>\n         <Title>이화인들을 위한, 이화인들에 의한 개발자 커뮤니티</Title>\n         <Container>\n \n             <InputContainer>\n"
+                },
+                {
+                    "date": 1689422960226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react';\n import styled from 'styled-components';\n+const Login\n \n-\n const Title = styled.p`\n    text-align: center;\n    \n `;\n@@ -28,9 +28,9 @@\n         </Container>\n         <ButtonContainer>\n \n         </ButtonContainer>\n-        </Login>\n+        </Logincontainer>\n     )\n \n }\n \n"
+                },
+                {
+                    "date": 1689422966931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n import React from 'react';\n import styled from 'styled-components';\n-const Login\n+const Logincontainer= styled.div`\n \n+`;\n+\n const Title = styled.p`\n    text-align: center;\n    \n `;\n"
+                },
+                {
+                    "date": 1689422975710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react';\n import styled from 'styled-components';\n const Logincontainer= styled.div`\n-background-color: rgba;\n+background-color: rgba(62, 141, 244, 1);\n `;\n \n const Title = styled.p`\n    text-align: center;\n"
+                },
+                {
+                    "date": 1689422983028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react';\n import styled from 'styled-components';\n const Logincontainer= styled.div`\n-background-color: #rgba(62, 141, 244, 1);\n+background-color: rgba(62, 141, 244, 1);\n `;\n \n const Title = styled.p`\n    text-align: center;\n"
+                }
+            ],
+            "date": 1689422673899,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport styled from 'styled-component';\n\n\nconst Title = styled.p`\n   text-align: center;\n   \n`;\nconst Container = styled.div``;\nconst InputContainer = styled.div``;\nconst InputId = styled.input``;\nconst InputPW = styled(InputId)``;\nconst ButtonContainer= styled.div``;\n\n\nconst Login =() =>{\n\n    return (\n        <>\n        <Title>이화인들을 위한, 이화인들에 의한 개발자 커뮤니티</Title>\n        <Container>\n\n            <InputContainer>\n               <InputId />\n               <InputPW />\n            </InputContainer>\n\n        </Container>\n        <ButtonContainer>\n\n        </ButtonContainer>\n        </>\n    )\n\n}\n\nexport default Login;"
+        }
+    ]
+}

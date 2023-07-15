@@ -1,0 +1,102 @@
+{
+    "sourceFile": "src/pages/Write.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 21,
+            "patches": [
+                {
+                    "date": 1689422649524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1689422661196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from \"react\";\n import { Component } from \"react\";\n-import styled from 'styled-component';\n+import styled from 'styled-components';\n \n const Titleinput = styled.textarea`\n    overflow: hidden;\n    width : 600px;\n"
+                },
+                {
+                    "date": 1689422711297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,28 @@\n+import React from \"react\";\n+import styled from 'styled-components';\n+\n+const Titleinput = styled.textarea`\n+   overflow: hidden;\n+   width : 600px;\n+   min-height : 45px;\n+   background-color : white;\n+   color : #006fff;\n+   font-size: 43px;\n+\n+`;\n+const Textinput = styled.textarea`\n+   width : 60%;\n+   min-height : 60%;\n+`;\n+\n+const Write =() =>{\n+    return (\n+        <>\n+          <Titleinput />\n+          <Textinput />\n+\n+        </>\n+    )\n+}\n+\n+export default Write;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689427635157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,28 @@\n+import React from \"react\";\n+import styled from 'styled-components';\n+\n+const Titleinput = styled.input`\n+   overflow: hidden;\n+   width : 600px;\n+   min-height : 45px;\n+   background-color : white;\n+   color : #006fff;\n+   font-size: 43px;\n+\n+`;\n+const Textinput = styled.textarea`\n+   width : 60%;\n+   min-height : 60%;\n+`;\n+\n+const Write =() =>{\n+    return (\n+        <>\n+          <Titleinput />\n+          <Textinput />\n+\n+        </>\n+    )\n+}\n+\n+export default Write;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689427646957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,13 +2,9 @@\n import styled from 'styled-components';\n \n const Titleinput = styled.input`\n    overflow: hidden;\n-   width : 600px;\n-   min-height : 45px;\n-   background-color : white;\n-   color : #006fff;\n-   font-size: 43px;\n+   \n \n `;\n const Textinput = styled.textarea`\n    width : 60%;\n@@ -24,62 +20,5 @@\n         </>\n     )\n }\n \n-export default Write;\n-import React from \"react\";\n-import styled from 'styled-components';\n-\n-const Titleinput = styled.textarea`\n-   overflow: hidden;\n-   width : 600px;\n-   min-height : 45px;\n-   background-color : white;\n-   color : #006fff;\n-   font-size: 43px;\n-\n-`;\n-const Textinput = styled.textarea`\n-   width : 60%;\n-   min-height : 60%;\n-`;\n-\n-const Write =() =>{\n-    return (\n-        <>\n-          <Titleinput />\n-          <Textinput />\n-\n-        </>\n-    )\n-}\n-\n-export default Write;\n-import React from \"react\";\n-import { Component } from \"react\";\n-import styled from 'styled-components';\n-\n-const Titleinput = styled.textarea`\n-   overflow: hidden;\n-   width : 600px;\n-   min-height : 45px;\n-   background-color : white;\n-   color : #006fff;\n-   font-size: 43px;\n-\n-`;\n-const Textinput = styled.textarea`\n-   width : 60%;\n-   min-height : 60%;\n-`;\n-\n-const Write =() =>{\n-    return (\n-        <>\n-          <Titleinput />\n-          <Textinput />\n-\n-        </>\n-    )\n-}\n-\n export default Write;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689427652555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,9 @@\n    \n \n `;\n const Textinput = styled.textarea`\n-   width : 60%;\n-   min-height : 60%;\n+   \n `;\n \n const Write =() =>{\n     return (\n"
+                },
+                {
+                    "date": 1689427659561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,9 @@\n \n const Write =() =>{\n     return (\n         <>\n+        <Write></Write>\n           <Titleinput />\n           <Textinput />\n \n         </>\n"
+                },
+                {
+                    "date": 1689427666851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,12 +12,12 @@\n \n const Write =() =>{\n     return (\n         <>\n-        <Write></Write>\n+        <Write>\n           <Titleinput />\n           <Textinput />\n-\n+        </Write>\n         </>\n     )\n }\n \n"
+                },
+                {
+                    "date": 1689427675157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import React from \"react\";\n import styled from 'styled-components';\n \n+const Write= styled.div``;\n const Titleinput = styled.input`\n    overflow: hidden;\n    \n \n"
+                },
+                {
+                    "date": 1689427685095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n import React from \"react\";\n import styled from 'styled-components';\n \n-const Write= styled.div``;\n+const Write= styled.div`\n+    \n+`;\n const Titleinput = styled.input`\n    overflow: hidden;\n    \n \n@@ -13,9 +15,9 @@\n \n const Write =() =>{\n     return (\n         <>\n-        <Write>\n+        <Writecontainer>\n           <Titleinput />\n           <Textinput />\n         </Write>\n         </>\n"
+                },
+                {
+                    "date": 1689427692328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,27 @@\n+import React from \"react\";\n+import styled from 'styled-components';\n+\n+const Writecontainer= styled.div`\n+    \n+`;\n+const Titleinput = styled.input`\n+   overflow: hidden;\n+   \n+\n+`;\n+const Textinput = styled.textarea`\n+   \n+`;\n+\n+const Write =() =>{\n+    return (\n+        <>\n+        <Writecontainer>\n+          <Titleinput />\n+          <Textinput />\n+        </Writecontainer>\n+        </>\n+    )\n+}\n+\n+export default Write;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689427718586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import React from \"react\";\n import styled from 'styled-components';\n \n const Writecontainer= styled.div`\n+\n     \n `;\n const Titleinput = styled.input`\n    overflow: hidden;\n@@ -16,39 +17,13 @@\n const Write =() =>{\n     return (\n         <>\n         <Writecontainer>\n+            <Title\n           <Titleinput />\n           <Textinput />\n         </Writecontainer>\n         </>\n     )\n }\n \n-export default Write;\n-import React from \"react\";\n-import styled from 'styled-components';\n-\n-const Write= styled.div`\n-    \n-`;\n-const Titleinput = styled.input`\n-   overflow: hidden;\n-   \n-\n-`;\n-const Textinput = styled.textarea`\n-   \n-`;\n-\n-const Write =() =>{\n-    return (\n-        <>\n-        <Writecontainer>\n-          <Titleinput />\n-          <Textinput />\n-        </Write>\n-        </>\n-    )\n-}\n-\n export default Write;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689427724440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n const Write =() =>{\n     return (\n         <>\n         <Writecontainer>\n-            <Title\n+            <Title>\n           <Titleinput />\n           <Textinput />\n         </Writecontainer>\n         </>\n"
+                },
+                {
+                    "date": 1689427732127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,30 @@\n+import React from \"react\";\n+import styled from 'styled-components';\n+\n+const Writecontainer= styled.div`\n+\n+    \n+`;\n+const Titleinput = styled.input`\n+   overflow: hidden;\n+   \n+\n+`;\n+const Textinput = styled.textarea`\n+   \n+`;\n+\n+const Write =() =>{\n+    return (\n+        <>\n+        <Writecontainer>\n+        <Title>\n+          <Titleinput />\n+        </Title>\n+          <Textinput />\n+        </Writecontainer>\n+        </>\n+    )\n+}\n+\n+export default Write;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689427741809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n const Writecontainer= styled.div`\n \n     \n `;\n+const Title = styled.div``;\n const Titleinput = styled.input`\n    overflow: hidden;\n    \n \n@@ -26,34 +27,5 @@\n         </>\n     )\n }\n \n-export default Write;\n-import React from \"react\";\n-import styled from 'styled-components';\n-\n-const Writecontainer= styled.div`\n-\n-    \n-`;\n-const Titleinput = styled.input`\n-   overflow: hidden;\n-   \n-\n-`;\n-const Textinput = styled.textarea`\n-   \n-`;\n-\n-const Write =() =>{\n-    return (\n-        <>\n-        <Writecontainer>\n-            <Title>\n-          <Titleinput />\n-          <Textinput />\n-        </Writecontainer>\n-        </>\n-    )\n-}\n-\n export default Write;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1689427748029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n         <>\n         <Writecontainer>\n         <Title>\n           <Titleinput />\n+          <\n         </Title>\n           <Textinput />\n         </Writecontainer>\n         </>\n"
+                },
+                {
+                    "date": 1689427755303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n         <>\n         <Writecontainer>\n         <Title>\n           <Titleinput />\n-          <\n+          <Selectb\n         </Title>\n           <Textinput />\n         </Writecontainer>\n         </>\n"
+                },
+                {
+                    "date": 1689427762567,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n         <>\n         <Writecontainer>\n         <Title>\n           <Titleinput />\n-          <Selectb\n+          <Sele\n         </Title>\n           <Textinput />\n         </Writecontainer>\n         </>\n"
+                },
+                {
+                    "date": 1689428474718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n import React from \"react\";\n import styled from 'styled-components';\n \n const Writecontainer= styled.div`\n-\n+     width: 100vw;\n+     height: 100vh;\n+     \n     \n `;\n const Title = styled.div``;\n const Titleinput = styled.input`\n@@ -20,9 +22,9 @@\n         <>\n         <Writecontainer>\n         <Title>\n           <Titleinput />\n-          <Sele\n+          \n         </Title>\n           <Textinput />\n         </Writecontainer>\n         </>\n"
+                },
+                {
+                    "date": 1689428509050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n           <Titleinput />\n           \n         </Title>\n           <Textinput />\n+          \n         </Writecontainer>\n         </>\n     )\n }\n"
+                },
+                {
+                    "date": 1689428515660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           <Titleinput />\n           \n         </Title>\n           <Textinput />\n-          <\n+          <btn>완료</btn>\n         </Writecontainer>\n         </>\n     )\n }\n"
+                },
+                {
+                    "date": 1689428530976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,10 @@\n const Textinput = styled.textarea`\n    \n `;\n \n+const btn = styled.button``;\n+\n const Write =() =>{\n     return (\n         <>\n         <Writecontainer>\n"
+                }
+            ],
+            "date": 1689422649524,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport { Component } from \"react\";\nimport styled from 'styled-component';\n\nconst Titleinput = styled.textarea`\n   overflow: hidden;\n   width : 600px;\n   min-height : 45px;\n   background-color : white;\n   color : #006fff;\n   font-size: 43px;\n\n`;\nconst Textinput = styled.textarea`\n   width : 60%;\n   min-height : 60%;\n`;\n\nconst Write =() =>{\n    return (\n        <>\n          <Titleinput />\n          <Textinput />\n\n        </>\n    )\n}\n\nexport default Write;"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/utils/Palette.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1689420388203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1689420394779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-/컬러코드 정의\n+//컬러코드 정의\n export const ColorCode = {\n     MainBlue : \"#3E8DF4\",\n     Pink : \"#FFA0A0\",\n \n"
+                }
+            ],
+            "date": 1689420388203,
+            "name": "Commit-0",
+            "content": "/컬러코드 정의\nexport const ColorCode = {\n    MainBlue : \"#3E8DF4\",\n    Pink : \"#FFA0A0\",\n\n}\n\nexport default ColorCode;"
+        }
+    ]
+}

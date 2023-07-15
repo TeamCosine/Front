@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/home/Title.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1689421962893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1689421962893,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport styled from 'styled-component';\n\nconst Container = styled.button`\n  background-color: #E8F1FD;\n`;\n\nconst Title = ({text}) =>{\n    <>\n      <Container>\n          {text}\n      </Container>\n    </>\n\n}\n\nexport default Title;"
+        }
+    ]
+}

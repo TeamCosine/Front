@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/pages/Invite.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1689420234917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1689422556666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n //회원가입 페이지입니다.\n import React from \"react\";\n-import styled from 'styled-component';\n+import styled from 'styled-components';\n \n const Container = styled.div``;\n const InviteContainer = styled.div``;\n const IdContainer= styled.div``;\n"
+                },
+                {
+                    "date": 1689426364988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n //회원가입 페이지입니다.\n import React from \"react\";\n import styled from 'styled-components';\n \n-const Container = styled.div``;\n+const Container = styled.div`\n+   width: 100vh;\n+`;\n const InviteContainer = styled.div``;\n const IdContainer= styled.div``;\n const InputId = styled.input``;\n const PwContainer = styled(IdContainer)``;\n"
+                },
+                {
+                    "date": 1689426372361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import styled from 'styled-components';\n \n const Container = styled.div`\n    width: 100vw;\n-   \n+   background-color: ;\n `;\n const InviteContainer = styled.div``;\n const IdContainer= styled.div``;\n const InputId = styled.input``;\n"
+                },
+                {
+                    "date": 1689426383779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,56 @@\n+//회원가입 페이지입니다.\n+import React from \"react\";\n+import styled from 'styled-components';\n+\n+const Container = styled.div`\n+   width: 100vw;\n+   background-color: #3E;\n+`;\n+const InviteContainer = styled.div``;\n+const IdContainer= styled.div``;\n+const InputId = styled.input``;\n+const PwContainer = styled(IdContainer)``;\n+const InputPw = styled(InputId)``;\n+const EmailContainer = styled(IdContainer)``;\n+const InputEmail = styled(InputId)``;\n+const NickContainer = styled(IdContainer)``;\n+const InputNick = styled(InputId)``;\n+\n+\n+const Invite =() =>{\n+\n+    return (\n+        <>\n+          <Container>\n+            <InviteContainer>\n+                <p>회원가입</p>\n+                <IdContainer>\n+                    <p>아이디</p>\n+                    <InputId />\n+                    <button>중복확인</button>\n+                </IdContainer>\n+                <PwContainer>\n+                    <p>비밀번호</p>\n+                    <InputPw />\n+\n+                </PwContainer>\n+                <EmailContainer>\n+                    <p>이메일</p>\n+                    <InputEmail />\n+                </EmailContainer>\n+                <NickContainer>\n+                    <p>닉네임</p>\n+                    <InputNick />\n+                </NickContainer>\n+                {/* button */}\n+\n+            </InviteContainer>\n+\n+          </Container>\n+        \n+        </>\n+    )\n+\n+}\n+\n+export default Invite;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1689420234917,
+            "name": "Commit-0",
+            "content": "//회원가입 페이지입니다.\nimport React from \"react\";\nimport styled from 'styled-component';\n\nconst Container = styled.div``;\nconst InviteContainer = styled.div``;\nconst IdContainer= styled.div``;\nconst InputId = styled.input``;\nconst PwContainer = styled(IdContainer)``;\nconst InputPw = styled(InputId)``;\nconst EmailContainer = styled(IdContainer)``;\nconst InputEmail = styled(InputId)``;\nconst NickContainer = styled(IdContainer)``;\nconst InputNick = styled(InputId)``;\n\n\nconst Invite =() =>{\n\n    return (\n        <>\n          <Container>\n            <InviteContainer>\n                <p>회원가입</p>\n                <IdContainer>\n                    <p>아이디</p>\n                    <InputId />\n                    <button>중복확인</button>\n                </IdContainer>\n                <PwContainer>\n                    <p>비밀번호</p>\n                    <InputPw />\n\n                </PwContainer>\n                <EmailContainer>\n                    <p>이메일</p>\n                    <InputEmail />\n                </EmailContainer>\n                <NickContainer>\n                    <p>닉네임</p>\n                    <InputNick />\n                </NickContainer>\n                {/* button */}\n\n            </InviteContainer>\n\n          </Container>\n        \n        </>\n    )\n\n}\n\nexport default Invite;"
+        }
+    ]
+}
