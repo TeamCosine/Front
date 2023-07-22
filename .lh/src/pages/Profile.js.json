@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 45,
             "patches": [
                 {
                     "date": 1689420273143,
@@ -12,6 +12,182 @@
                 {
                     "date": 1689422697223,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n //회원 정보 수정\n import React from \"react\";\n-import styled from 'styled-component';\n+import styled from 'styled-components';\n \n const Container = styled.div``;\n const Title = styled.div``;\n const ProfileContainer= styled.div`\n"
+                },
+                {
+                    "date": 1690032551957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import React from \"react\";\n import styled from 'styled-components';\n \n const Container = styled.div``;\n+\n const Title = styled.div``;\n const ProfileContainer= styled.div`\n    background-color: #D8E8FD;\n    border-radius: 20px;\n"
+                },
+                {
+                    "date": 1690032601314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n    border-radius: 20px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n-\n `;\n const ProfileCard = styled.div`\n     border-radius: 20px;\n     background-color: #D8E8FD;\n"
+                },
+                {
+                    "date": 1690032988676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,15 +4,18 @@\n \n const Container = styled.div``;\n \n const Title = styled.div``;\n+\n const ProfileContainer= styled.div`\n    background-color: #D8E8FD;\n    border-radius: 20px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n+\n `;\n+\n const ProfileCard = styled.div`\n     border-radius: 20px;\n     background-color: #D8E8FD;\n \n"
+                },
+                {
+                    "date": 1690033429627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n     border-radius: 20px;\n     background-color: #D8E8FD;\n \n `;\n+\n const EmailContainer = styled.div`\n     flex-direction: row;\n `;\n const InputEmail = styled.input``;\n"
+                },
+                {
+                    "date": 1690036936288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,1 @@\n+//회원 정보 수정\n"
+                },
+                {
+                    "date": 1690036971763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,69 +1,2 @@\n //회원 정보 수정\n-//회원 정보 수정\n-import React from \"react\";\n-import styled from 'styled-components';\n-\n-const Container = styled.div``;\n-\n-const Title = styled.div``;\n-\n-const ProfileContainer= styled.div`\n-   background-color: #D8E8FD;\n-   border-radius: 20px;\n-   display: flex;\n-   flex-direction: column;\n-   justify-content: center;\n-\n-`;\n-\n-const ProfileCard = styled.div`\n-    border-radius: 20px;\n-    background-color: #D8E8FD;\n-\n-`;\n-\n-const EmailContainer = styled.div`\n-    flex-direction: row;\n-`;\n-const InputEmail = styled.input``;\n-const NickContainer = styled(EmailContainer);\n-const InputNick = styled(InputEmail);\n-const PWContainer = styled.div(EmailContainer);\n-const InputPw = styled(InputNick);\n-const ButtonContainer = styled.div``;\n-\n-const Profile = () =>{\n-    return (\n-        <>\n-          <Container>\n-            <Title>회원 정보 수정</Title>\n-            <ProfileContainer>\n-                <p>👩🏻‍💻 안녕하세요 nickname님</p>\n-                <ProfileCard>\n-                    <PWContainer>\n-                        <p>비밀번호</p>\n-                        <InputPw />\n-                    </PWContainer>\n-                    <EmailContainer>\n-                        <p>이메일</p>\n-                        <InputEmail />\n-                    </EmailContainer>\n-                    <NickContainer>\n-                        <p>닉네임</p>\n-                        <InputNick />\n-                    </NickContainer>\n-                </ProfileCard>\n-                <ButtonContainer>\n-\n-                </ButtonContainer>\n-\n-            </ProfileContainer>\n-\n-          </Container>\n-        \n-        </>\n-    )\n-\n-}\n-\n-export default Profile;\n\\ No newline at end of file\n+import React from \"react\";\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690036978487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,4 @@\n //회원 정보 수정\n-import React from \"react\";\n\\ No newline at end of file\n+import React from \"react\";\n+import { styled } from \"styled-components\";\n+impost styled\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690036984771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+//회원 정보 수정\n+import React from \"react\";\n+import { styled } from \"styled-components\";\n+\n+const \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690036994736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n //회원 정보 수정\n import React from \"react\";\n import { styled } from \"styled-components\";\n \n-const \n-//회원 정보 수정\n-import React from \"react\";\n-import { styled } from \"styled-components\";\n-impost styled\n\\ No newline at end of file\n+const Profile = () =>{\n+\n+}\n+\n+export default Profile;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690037022002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,13 @@\n import React from \"react\";\n import { styled } from \"styled-components\";\n \n const Profile = () =>{\n+    return (\n+        <>\n+            <\n+        </>\n+    )\n \n }\n \n export default Profile;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690037033328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n const Profile = () =>{\n     return (\n         <>\n-            <\n+            \n         </>\n     )\n \n }\n"
+                },
+                {
+                    "date": 1690037041865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n \n const Profile = () =>{\n     return (\n         <>\n-            \n+            <Title></Title>\n         </>\n     )\n \n }\n"
+                },
+                {
+                    "date": 1690037049391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n //회원 정보 수정\n import React from \"react\";\n import { styled } from \"styled-components\";\n-\n+const Title = styled.div``;\n const Profile = () =>{\n     return (\n         <>\n             <Title></Title>\n"
+                },
+                {
+                    "date": 1690037059805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n const Title = styled.div``;\n const Profile = () =>{\n     return (\n         <>\n+          <Profilecontainer></Profilecontainer>\n             <Title></Title>\n         </>\n     )\n \n"
+                },
+                {
+                    "date": 1690037065497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n const Profile = () =>{\n     return (\n         <>\n           <Profilecontainer></Profilecontainer>\n-            <Title></Title>\n+            \n         </>\n     )\n \n }\n"
+                },
+                {
+                    "date": 1690037073219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n //회원 정보 수정\n import React from \"react\";\n import { styled } from \"styled-components\";\n const Title = styled.div``;\n+const Profilecontainer = stled.div``;\n const Profile = () =>{\n     return (\n         <>\n           <Profilecontainer></Profilecontainer>\n"
+                },
+                {
+                    "date": 1690037079216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,16 @@\n //회원 정보 수정\n import React from \"react\";\n import { styled } from \"styled-components\";\n const Title = styled.div``;\n-const Profilecontainer = stled.div``;\n+const Profilecontainer = styled.div``;\n const Profile = () =>{\n     return (\n         <>\n-          <Profilecontainer></Profilecontainer>\n+          <Profilecontainer>\n             \n+          </Profilecontainer>\n+            \n         </>\n     )\n \n }\n"
+                },
+                {
+                    "date": 1690037085147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+//회원 정보 수정\n+import React from \"react\";\n+import { styled } from \"styled-components\";\n+const Title = styled.div``;\n+const Profilecontainer = styled.div``;\n+const Profile = () =>{\n+    return (\n+        <>\n+          <Profilecontainer>\n+            <Title>회원 정보 수정</Title>\n+          </Profilecontainer>\n+            \n+        </>\n+    )\n+\n+}\n+\n+export default Profile;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690037114286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,30 +7,13 @@\n     return (\n         <>\n           <Profilecontainer>\n             <Title>회원 정보 수정</Title>\n+            <Nick></Nick>\n           </Profilecontainer>\n             \n         </>\n     )\n \n }\n \n-export default Profile;\n-//회원 정보 수정\n-import React from \"react\";\n-import { styled } from \"styled-components\";\n-const Title = styled.div``;\n-const Profilecontainer = styled.div``;\n-const Profile = () =>{\n-    return (\n-        <>\n-          <Profilecontainer>\n-            \n-          </Profilecontainer>\n-            \n-        </>\n-    )\n-\n-}\n-\n export default Profile;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690037120334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     return (\n         <>\n           <Profilecontainer>\n             <Title>회원 정보 수정</Title>\n-            <Nick></Nick>\n+            <Nick>안녕하세요 닉네임님!</Nick>\n           </Profilecontainer>\n             \n         </>\n     )\n"
+                },
+                {
+                    "date": 1690037130220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+//회원 정보 수정\n+import React from \"react\";\n+import { styled } from \"styled-components\";\n+const Title = styled.div``;\n+const Profilecontainer = styled.div``;\n+const Nick = styled.div``;\n+const Profile = () =>{\n+    return (\n+        <>\n+          <Profilecontainer>\n+            <Title>회원 정보 수정</Title>\n+            <Nick>안녕하세요 닉네임님!</Nick>\n+          </Profilecontainer>\n+            \n+        </>\n+    )\n+\n+}\n+\n+export default Profile;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690037149111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,32 +8,13 @@\n     return (\n         <>\n           <Profilecontainer>\n             <Title>회원 정보 수정</Title>\n-            <Nick>안녕하세요 닉네임님!</Nick>\n+            <Nick>👩‍💻안녕하세요 닉네임님!</Nick>\n           </Profilecontainer>\n             \n         </>\n     )\n \n }\n \n-export default Profile;\n-//회원 정보 수정\n-import React from \"react\";\n-import { styled } from \"styled-components\";\n-const Title = styled.div``;\n-const Profilecontainer = styled.div``;\n-const Profile = () =>{\n-    return (\n-        <>\n-          <Profilecontainer>\n-            <Title>회원 정보 수정</Title>\n-            <Nick>안녕하세요 닉네임님!</Nick>\n-          </Profilecontainer>\n-            \n-        </>\n-    )\n-\n-}\n-\n export default Profile;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690037164922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n     return (\n         <>\n           <Profilecontainer>\n             <Title>회원 정보 수정</Title>\n-            <Nick>👩‍💻안녕하세요 닉네임님!</Nick>\n+            <Nick>👩‍💻 안녕하세요 닉네임님!</Nick>\n+            \n           </Profilecontainer>\n             \n         </>\n     )\n"
+                },
+                {
+                    "date": 1690037171119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,11 @@\n         <>\n           <Profilecontainer>\n             <Title>회원 정보 수정</Title>\n             <Nick>👩‍💻 안녕하세요 닉네임님!</Nick>\n-            \n+            <container>\n+                \n+            </container>\n           </Profilecontainer>\n             \n         </>\n     )\n"
+                },
+                {
+                    "date": 1690037176313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n           <Profilecontainer>\n             <Title>회원 정보 수정</Title>\n             <Nick>👩‍💻 안녕하세요 닉네임님!</Nick>\n             <container>\n-                \n-            </container>\n+\n+            </Container>\n           </Profilecontainer>\n             \n         </>\n     )\n"
+                },
+                {
+                    "date": 1690037185936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,15 +3,16 @@\n import { styled } from \"styled-components\";\n const Title = styled.div``;\n const Profilecontainer = styled.div``;\n const Nick = styled.div``;\n+const Container = styled.div``;\n const Profile = () =>{\n     return (\n         <>\n           <Profilecontainer>\n             <Title>회원 정보 수정</Title>\n             <Nick>👩‍💻 안녕하세요 닉네임님!</Nick>\n-            <container>\n+            <Container>\n \n             </Container>\n           </Profilecontainer>\n             \n"
+                },
+                {
+                    "date": 1690037248460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,37 @@\n+//회원 정보 수정\n+import React from \"react\";\n+import { styled } from \"styled-components\";\n+const Title = styled.div``;\n+const Profilecontainer = styled.div``;\n+const Nick = styled.div``;\n+const Container = styled.div``;\n+const Profile = () =>{\n+    return (\n+        <>\n+          <Profilecontainer>\n+            <Title>회원 정보 수정</Title>\n+            <Nick>👩‍💻 안녕하세요 닉네임님!</Nick>\n+            <Container>\n+            <FieldContainer>\n+                  <Label >비밀번호</Label>\n+                  <Input style={{marginRight:'30px'}}/>\n+               </FieldContainer>\n+               <FieldContainer>\n+                  <Label>이메일</Label>\n+                  <Input style={{marginRight:'40px'}}/>\n+               </FieldContainer>\n+               <FieldContainer>\n+                  <Label>닉네임</Label>\n+                  <Input style={{marginRight:'40px'}}/>\n+               </FieldContainer>\n+\n+\n+            </Container>\n+          </Profilecontainer>\n+            \n+        </>\n+    )\n+\n+}\n+\n+export default Profile;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690037286775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,16 +4,41 @@\n const Title = styled.div``;\n const Profilecontainer = styled.div``;\n const Nick = styled.div``;\n const Container = styled.div``;\n+const FieldContainer = styled.div`\n+   display: flex;\n+   align-items: center;\n+   margin-bottom: 10px;\n+   text-align: center;\n+   \n+`;\n+\n+const Label = styled.p`\n+   margin-right: 10px;\n+   font-weight: bold;\n+   text-align: center;\n+   \n+`;\n+\n+const Input = styled.input`\n+    background-color: #d9d9d9;\n+    width : 250px;\n+    border-radius: 3px;\n+    border:none;\n+    height: 4vh;\n+    \n+\n+   \n+`;\n const Profile = () =>{\n     return (\n         <>\n           <Profilecontainer>\n             <Title>회원 정보 수정</Title>\n             <Nick>👩‍💻 안녕하세요 닉네임님!</Nick>\n             <Container>\n-            <FieldContainer>\n+               <FieldContainer>\n                   <Label >비밀번호</Label>\n                   <Input style={{marginRight:'30px'}}/>\n                </FieldContainer>\n                <FieldContainer>\n@@ -33,29 +58,5 @@\n     )\n \n }\n \n-export default Profile;\n-//회원 정보 수정\n-import React from \"react\";\n-import { styled } from \"styled-components\";\n-const Title = styled.div``;\n-const Profilecontainer = styled.div``;\n-const Nick = styled.div``;\n-const Container = styled.div``;\n-const Profile = () =>{\n-    return (\n-        <>\n-          <Profilecontainer>\n-            <Title>회원 정보 수정</Title>\n-            <Nick>👩‍💻 안녕하세요 닉네임님!</Nick>\n-            <Container>\n-\n-            </Container>\n-          </Profilecontainer>\n-            \n-        </>\n-    )\n-\n-}\n-\n export default Profile;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690037306668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n    \n `;\n \n const Input = styled.input`\n-    background-color: #d9d9d9;\n+    background-color: white;\n     width : 250px;\n     border-radius: 3px;\n     border:none;\n     height: 4vh;\n"
+                },
+                {
+                    "date": 1690037315789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,11 @@\n import { styled } from \"styled-components\";\n const Title = styled.div``;\n const Profilecontainer = styled.div``;\n const Nick = styled.div``;\n-const Container = styled.div``;\n+const Container = styled.div`\n+    \n+`;\n const FieldContainer = styled.div`\n    display: flex;\n    align-items: center;\n    margin-bottom: 10px;\n"
+                },
+                {
+                    "date": 1690037323560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const Title = styled.div``;\n const Profilecontainer = styled.div``;\n const Nick = styled.div``;\n const Container = styled.div`\n-    \n+    background-color: ;\n `;\n const FieldContainer = styled.div`\n    display: flex;\n    align-items: center;\n"
+                },
+                {
+                    "date": 1690037331254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n const Title = styled.div``;\n const Profilecontainer = styled.div``;\n const Nick = styled.div``;\n const Container = styled.div`\n-    background-color: ;\n+    background-color: #d8ef;\n `;\n const FieldContainer = styled.div`\n    display: flex;\n    align-items: center;\n"
+                },
+                {
+                    "date": 1690037381650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n const Title = styled.div``;\n const Profilecontainer = styled.div``;\n const Nick = styled.div``;\n const Container = styled.div`\n-    background-color: #d8ef;\n+    background-color: #d8e8fd;\n+\n `;\n const FieldContainer = styled.div`\n    display: flex;\n    align-items: center;\n"
+                },
+                {
+                    "date": 1690037397380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,9 @@\n             <Container>\n                <FieldContainer>\n                   <Label >비밀번호</Label>\n                   <Input style={{marginRight:'30px'}}/>\n+                  <Input style={{marginRight:'30px'}}/>\n                </FieldContainer>\n                <FieldContainer>\n                   <Label>이메일</Label>\n                   <Input style={{marginRight:'40px'}}/>\n@@ -51,8 +52,9 @@\n                <FieldContainer>\n                   <Label>닉네임</Label>\n                   <Input style={{marginRight:'40px'}}/>\n                </FieldContainer>\n+               <File\n \n \n             </Container>\n           </Profilecontainer>\n"
+                },
+                {
+                    "date": 1690037402525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,11 @@\n                <FieldContainer>\n                   <Label>닉네임</Label>\n                   <Input style={{marginRight:'40px'}}/>\n                </FieldContainer>\n-               <File\n+               <FieldContainer>\n+                   \n+               </FieldContainer>\n \n \n             </Container>\n           </Profilecontainer>\n"
+                },
+                {
+                    "date": 1690037409616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,10 @@\n                   <Label>닉네임</Label>\n                   <Input style={{marginRight:'40px'}}/>\n                </FieldContainer>\n                <FieldContainer>\n-                   \n+                   <Btn></Btn>\n+                   <Btn></Btn>\n                </FieldContainer>\n \n \n             </Container>\n"
+                },
+                {
+                    "date": 1690037419455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,10 @@\n     \n \n    \n `;\n+\n+const Btn =styled.button``;\n const Profile = () =>{\n     return (\n         <>\n           <Profilecontainer>\n"
+                },
+                {
+                    "date": 1690037437829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,13 @@\n \n    \n `;\n \n-const Btn =styled.button``;\n+const Btn =styled.button`\n+    width: 130px;\n+    height : 30px;\n+    \n+`;\n const Profile = () =>{\n     return (\n         <>\n           <Profilecontainer>\n"
+                },
+                {
+                    "date": 1690037444459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,9 @@\n \n const Btn =styled.button`\n     width: 130px;\n     height : 30px;\n+    font-weight: bold;\n     \n `;\n const Profile = () =>{\n     return (\n"
+                },
+                {
+                    "date": 1690037450531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,9 @@\n const Btn =styled.button`\n     width: 130px;\n     height : 30px;\n     font-weight: bold;\n-    \n+    border-radius: 20px;\n `;\n const Profile = () =>{\n     return (\n         <>\n"
+                },
+                {
+                    "date": 1690037456600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,9 +37,11 @@\n const Btn =styled.button`\n     width: 130px;\n     height : 30px;\n     font-weight: bold;\n-    border-radius: 20px;\n+    border-radius: 20px;\\\n+    border: none;\n+    \n `;\n const Profile = () =>{\n     return (\n         <>\n"
+                },
+                {
+                    "date": 1690037461633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,11 +37,11 @@\n const Btn =styled.button`\n     width: 130px;\n     height : 30px;\n     font-weight: bold;\n-    border-radius: 20px;\\\n+    border-radius: 20px;\n     border: none;\n-    \n+\n `;\n const Profile = () =>{\n     return (\n         <>\n"
+                },
+                {
+                    "date": 1690037469676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,10 @@\n     height : 30px;\n     font-weight: bold;\n     border-radius: 20px;\n     border: none;\n-    background-color: ;\n+    background-color: #006FFF;\n+    \n `;\n const Profile = () =>{\n     return (\n         <>\n"
+                },
+                {
+                    "date": 1690037477736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     font-weight: bold;\n     border-radius: 20px;\n     border: none;\n     background-color: #006FFF;\n-    flex-shrink: ;\n+    flex-shrink: 0;\n `;\n const Profile = () =>{\n     return (\n         <>\n"
                 }
             ],
             "date": 1689420273143,
