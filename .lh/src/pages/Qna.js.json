@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 18,
+            "activePatchIndex": 35,
             "patches": [
                 {
                     "date": 1689420290879,
@@ -80,6 +80,74 @@
                 {
                     "date": 1689430281772,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n const GridContainer = styled.div`\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    grid-gap:3vh;\n+   gri\n `;\n \n const Qna =()=>{\n     return (\n"
+                },
+                {
+                    "date": 1689481827384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,15 +3,15 @@\n import Card from \"../components/QNA/Card\";\n import Title from \"../components/common/Title\";\n \n const Container = styled.div`\n-    \n+   \n `;\n const GridContainer = styled.div`\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    grid-gap:3vh;\n-   gri\n+   \n `;\n \n const Qna =()=>{\n     return (\n"
+                },
+                {
+                    "date": 1690033486806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n `;\n const GridContainer = styled.div`\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n-   grid-gap:3vh;\n+   grid-gap:2vh;\n    \n `;\n \n const Qna =()=>{\n"
+                },
+                {
+                    "date": 1690033496974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n `;\n const GridContainer = styled.div`\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n-   grid-gap:2vh;\n+   grid-gap:1vh;\n    \n `;\n \n const Qna =()=>{\n"
+                },
+                {
+                    "date": 1690034567760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n `;\n const GridContainer = styled.div`\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n-   grid-gap:1vh;\n    \n+   \n `;\n \n const Qna =()=>{\n     return (\n"
+                },
+                {
+                    "date": 1690034578067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n `;\n const GridContainer = styled.div`\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n+   g\n    \n-   \n `;\n \n const Qna =()=>{\n     return (\n"
+                },
+                {
+                    "date": 1690034585954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n `;\n const GridContainer = styled.div`\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n+   grid-gap: 1vh;\n    g\n    \n `;\n \n"
+                },
+                {
+                    "date": 1690034708547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,10 @@\n    \n `;\n const GridContainer = styled.div`\n    display: grid;\n-   grid-template-columns: repeat(3, 1fr);\n+   grid-template-columns: repeat(4, 1fr);\n    grid-gap: 1vh;\n-   g\n    \n `;\n \n const Qna =()=>{\n"
+                },
+                {
+                    "date": 1690034724100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n const GridContainer = styled.div`\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 1vh;\n-   \n+   padding\n `;\n \n const Qna =()=>{\n     return (\n"
+                },
+                {
+                    "date": 1690034738310,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,10 @@\n const GridContainer = styled.div`\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 1vh;\n-   padding\n+   padding-left: 5vw;\n+   paddi\n `;\n \n const Qna =()=>{\n     return (\n"
+                },
+                {
+                    "date": 1690034752294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n const GridContainer = styled.div`\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 1vh;\n-   padding-left: 5vw;\n-   paddi\n+   padding-left: 10vw;\n+   padding-right: 5vw;\n `;\n \n const Qna =()=>{\n     return (\n"
+                },
+                {
+                    "date": 1690034769945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n const GridContainer = styled.div`\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    grid-gap: 1vh;\n-   padding-left: 10vw;\n-   padding-right: 5vw;\n+   padding-left: 15vw;\n+   padding-right: 10vw;\n `;\n \n const Qna =()=>{\n     return (\n"
+                },
+                {
+                    "date": 1690034799546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,12 @@\n    \n `;\n const GridContainer = styled.div`\n    display: grid;\n-   grid-template-columns: repeat(4, 1fr);\n+   grid-template-columns: repeat(3, 1fr);\n    grid-gap: 1vh;\n    padding-left: 15vw;\n-   padding-right: 10vw;\n+   padding-right: 15vw;\n `;\n \n const Qna =()=>{\n     return (\n"
+                },
+                {
+                    "date": 1690034813919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n const GridContainer = styled.div`\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    grid-gap: 1vh;\n-   padding-left: 15vw;\n-   padding-right: 15vw;\n+   padding-left: 18vw;\n+   padding-right: 18vw;\n `;\n \n const Qna =()=>{\n     return (\n"
+                },
+                {
+                    "date": 1690034823553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n const GridContainer = styled.div`\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    grid-gap: 1vh;\n-   padding-left: 18vw;\n+   padding-left: 22vw;\n    padding-right: 18vw;\n `;\n \n const Qna =()=>{\n"
+                },
+                {
+                    "date": 1690034833882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n const GridContainer = styled.div`\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    grid-gap: 1vh;\n-   padding-left: 22vw;\n-   padding-right: 18vw;\n+   padding-left: 20vw;\n+   padding-right: 22vw;\n `;\n \n const Qna =()=>{\n     return (\n"
+                },
+                {
+                    "date": 1690034849676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n const GridContainer = styled.div`\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    grid-gap: 1vh;\n-   padding-left: 20vw;\n-   padding-right: 20vw;\n+   padding-left: 22vw;\n+   padding-right: 22vw;\n `;\n \n const Qna =()=>{\n     return (\n"
+                },
+                {
+                    "date": 1690034879631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,10 @@\n             <Card/>\n             <Card/>\n             <Card/>\n             <Card/>\n+            <Card />\n+            <Card/>\n             </GridContainer>\n           </Container>\n         </>\n     )\n"
                 }
             ],
             "date": 1689420290879,

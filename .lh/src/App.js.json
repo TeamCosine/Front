@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1689422190566,
@@ -24,6 +24,10 @@
                 {
                     "date": 1689422719331,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n import {BrowserRouter, Routes, Route} from 'react-router-dom';\n import Home from './pages/Home';\n import Profile from './pages/Profile';\n-import Login from './pages/login';\n+import Login from './pages/Login';\n import MyInfo from './pages/MyInfo';\n import Write from './pages/Write';\n import Qna from './pages/Qna';\n import Invite from './pages/Invite';\n"
+                },
+                {
+                    "date": 1690033034648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,33 @@\n+import React from 'react';\n+import './App.css';\n+\n+import {BrowserRouter, Routes, Route} from 'react-router-dom';\n+import Home from './pages/Home';\n+import Profile from './pages/Profile';\n+import Login from './pages/Login';\n+import MyInfo from './pages/MyInfo';\n+import Write from './pages/Write';\n+import Qna from './pages/Qna';\n+import Invite from './pages/Invite';\n+\n+\n+function App() {\n+  return (\n+    <BrowserRouter>\n+    <div className=\"App\">\n+      <Routes>\n+        <Route path = \"/\" element={<Login/>}/>\n+        <Route path = \"/profile\" element={<Profile/>}/>\n+        <Route path = \"/myinfo\" element = {<MyInfo/>} />\n+        <Route path = \"/Write\" element = {<Write/>} />\n+        <Route path = \"/Qna\" element={<Qna/>}/>\n+        <Route path = \"/home\" element = {< Home/>}/>\n+        <Route path = \"/invite\" element={<Invite/>}/>\n+\n+      </Routes>\n+    </div>\n+    </BrowserRouter>\n+  );\n+}\n+\n+export default App;\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1689422190566,
