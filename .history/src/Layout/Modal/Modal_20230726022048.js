@@ -7,7 +7,6 @@ const Overlay=styled.div``;
 const Modalwrap=styled.div``;
 const Contents = styled.div``;
 const Modal = ({children}) =>{
-    const modalRef = useRef(null);
     
     return (
         <Container>
