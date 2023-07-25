@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/Layout/Modal/Invite.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1690305950402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1690305950402,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport Modal from \"./Modal\";\nimport styled from \"styled-components\";\n\n\nconst PasswordModal =() =>{\n\n    return (\n       <Modal>\n        <p>가입이 정상적으로 완료되었습니다.<br/>로그인 화면으로 이동합니다.</p>\n       </Modal>\n    )\n\n}\n\nexport default PasswordModal;"
+        }
+    ]
+}

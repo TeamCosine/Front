@@ -3,11 +3,63 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 13,
             "patches": [
                 {
                     "date": 1689422148184,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1690304984624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+import React from \"react\";\n+import styled from \"styled-component\";\n+\n+const Container = styled.div`\n+  \n+`;\n+\n+const Modal = () =>{\n+    <Container>\n+\n+    </Container>\n+\n+}\n+\n+export default Modal;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690305001376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import React from \"react\";\n import styled from \"styled-component\";\n \n const Container = styled.div`\n+  width : 380px;\n   \n `;\n \n const Modal = () =>{\n"
+                },
+                {
+                    "date": 1690305006675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import styled from \"styled-component\";\n \n const Container = styled.div`\n   width : 380px;\n-  \n+  height : 230px;\n `;\n \n const Modal = () =>{\n     <Container>\n@@ -12,20 +12,5 @@\n     </Container>\n \n }\n \n-export default Modal;\n-import React from \"react\";\n-import styled from \"styled-component\";\n-\n-const Container = styled.div`\n-   \n-`;\n-\n-const Modal = () =>{\n-    <Container>\n-\n-    </Container>\n-\n-}\n-\n export default Modal;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690305013912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n import React from \"react\";\n import styled from \"styled-component\";\n \n const Container = styled.div`\n-  width : 380px;\n+  width : 480px;\n   height : 230px;\n+  \n `;\n \n const Modal = () =>{\n     <Container>\n"
+                },
+                {
+                    "date": 1690305021624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n \n const Container = styled.div`\n   width : 480px;\n   height : 230px;\n+  background-color: #006FFF;\n   \n `;\n \n const Modal = () =>{\n"
+                },
+                {
+                    "date": 1690305029713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n const Container = styled.div`\n   width : 480px;\n   height : 230px;\n   background-color: #006FFF;\n-  \n+  color : white;\n+  border\n `;\n \n const Modal = () =>{\n     <Container>\n"
+                },
+                {
+                    "date": 1690305037456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,10 @@\n   width : 480px;\n   height : 230px;\n   background-color: #006FFF;\n   color : white;\n-  border\n+  border-radius: 5px;\n+  \n `;\n \n const Modal = () =>{\n     <Container>\n"
+                },
+                {
+                    "date": 1690305360494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,10 @@\n import React from \"react\";\n import styled from \"styled-component\";\n \n const Container = styled.div`\n-  width : 480px;\n-  height : 230px;\n-  background-color: #006FFF;\n-  color : white;\n-  border-radius: 5px;\n   \n+\n `;\n \n const Modal = () =>{\n     <Container>\n"
+                },
+                {
+                    "date": 1690305370828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n \n `;\n \n const Modal = () =>{\n-    <Container>\n+    return (\n+        \n+    )\n \n-    </Container>\n-\n }\n \n export default Modal;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690305377473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,11 @@\n `;\n \n const Modal = () =>{\n     return (\n-        \n+        <Container>\n+            <\n+        </Container>\n     )\n \n }\n \n"
+                },
+                {
+                    "date": 1690305384205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \n const Modal = () =>{\n     return (\n         <Container>\n-            <\n+            <Overlay></Overlay>\n         </Container>\n     )\n \n }\n"
+                },
+                {
+                    "date": 1690305396817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import styled from \"styled-component\";\n \n const Container = styled.div`\n `;\n+const Overlay=styled.div``\n \n const Modal = () =>{\n     return (\n         <Container>\n"
+                },
+                {
+                    "date": 1690305463376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+import React from \"react\";\n+import styled from \"styled-component\";\n+\n+const Container = styled.div`\n+`;\n+const Overlay=styled.div``;\n+const Modalwrap=styled.div``;\n+const Modal = () =>{\n+    return (\n+        <Container>\n+            <Overlay>\n+               <Modalwrap>\n+\n+               </Modalwrap>\n+            </Overlay>\n+        </Container>\n+    )\n+\n+}\n+\n+export default Modal;\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1689422148184,
