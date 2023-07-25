@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 5,
+            "activePatchIndex": 14,
             "patches": [
                 {
                     "date": 1689422190566,
@@ -28,6 +28,42 @@
                 {
                     "date": 1690033034648,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,33 @@\n+import React from 'react';\n+import './App.css';\n+\n+import {BrowserRouter, Routes, Route} from 'react-router-dom';\n+import Home from './pages/Home';\n+import Profile from './pages/Profile';\n+import Login from './pages/Login';\n+import MyInfo from './pages/MyInfo';\n+import Write from './pages/Write';\n+import Qna from './pages/Qna';\n+import Invite from './pages/Invite';\n+\n+\n+function App() {\n+  return (\n+    <BrowserRouter>\n+    <div className=\"App\">\n+      <Routes>\n+        <Route path = \"/\" element={<Login/>}/>\n+        <Route path = \"/profile\" element={<Profile/>}/>\n+        <Route path = \"/myinfo\" element = {<MyInfo/>} />\n+        <Route path = \"/Write\" element = {<Write/>} />\n+        <Route path = \"/Qna\" element={<Qna/>}/>\n+        <Route path = \"/home\" element = {< Home/>}/>\n+        <Route path = \"/invite\" element={<Invite/>}/>\n+\n+      </Routes>\n+    </div>\n+    </BrowserRouter>\n+  );\n+}\n+\n+export default App;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690301844384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,33 @@\n+import React from 'react';\n+import './App.css';\n+\n+import {BrowserRouter, Routes, Route} from 'react-router-dom';\n+import Home from './pages/Home';\n+import Profile from './pages/Profile';\n+import Login from './pages/Login';\n+import MyInfo from './pages/MyInfo';\n+import Write from './pages/Write';\n+import Qna from './pages/Qna';\n+import Invite from './pages/Invite';\n+import \n+\n+function App() {\n+  return (\n+    <BrowserRouter>\n+    <div className=\"App\">\n+      <Routes>\n+        <Route path = \"/\" element={<Login/>}/>\n+        <Route path = \"/profile\" element={<Profile/>}/>\n+        <Route path = \"/myinfo\" element = {<MyInfo/>} />\n+        <Route path = \"/Write\" element = {<Write/>} />\n+        <Route path = \"/Qna\" element={<Qna/>}/>\n+        <Route path = \"/home\" element = {< Home/>}/>\n+        <Route path = \"/invite\" element={<Invite/>}/>\n+\n+      </Routes>\n+    </div>\n+    </BrowserRouter>\n+  );\n+}\n+\n+export default App;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690301862995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n \n function App() {\n   return (\n     <BrowserRouter>\n+    <Sidebar />\n     <div className=\"App\">\n       <Routes>\n         <Route path = \"/\" element={<Login/>}/>\n         <Route path = \"/profile\" element={<Profile/>}/>\n"
+                },
+                {
+                    "date": 1690302299716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n import MyInfo from './pages/MyInfo';\n import Write from './pages/Write';\n import Qna from './pages/Qna';\n import Invite from './pages/Invite';\n-import \n \n+\n function App() {\n   return (\n     <BrowserRouter>\n     <Sidebar />\n@@ -30,69 +30,5 @@\n     </BrowserRouter>\n   );\n }\n \n-export default App;\n-import React from 'react';\n-import './App.css';\n-\n-import {BrowserRouter, Routes, Route} from 'react-router-dom';\n-import Home from './pages/Home';\n-import Profile from './pages/Profile';\n-import Login from './pages/Login';\n-import MyInfo from './pages/MyInfo';\n-import Write from './pages/Write';\n-import Qna from './pages/Qna';\n-import Invite from './pages/Invite';\n-\n-\n-function App() {\n-  return (\n-    <BrowserRouter>\n-    <div className=\"App\">\n-      <Routes>\n-        <Route path = \"/\" element={<Login/>}/>\n-        <Route path = \"/profile\" element={<Profile/>}/>\n-        <Route path = \"/myinfo\" element = {<MyInfo/>} />\n-        <Route path = \"/Write\" element = {<Write/>} />\n-        <Route path = \"/Qna\" element={<Qna/>}/>\n-        <Route path = \"/home\" element = {< Home/>}/>\n-        <Route path = \"/invite\" element={<Invite/>}/>\n-\n-      </Routes>\n-    </div>\n-    </BrowserRouter>\n-  );\n-}\n-\n-export default App;\n-import './App.css';\n-\n-import {BrowserRouter, Routes, Route} from 'react-router-dom';\n-import Home from './pages/Home';\n-import Profile from './pages/Profile';\n-import Login from './pages/Login';\n-import MyInfo from './pages/MyInfo';\n-import Write from './pages/Write';\n-import Qna from './pages/Qna';\n-import Invite from './pages/Invite';\n-\n-function App() {\n-  return (\n-    <BrowserRouter>\n-    <div className=\"App\">\n-      <Routes>\n-        <Route path = \"/\" element={<Login/>}/>\n-        <Route path = \"/profile\" element={<Profile/>}/>\n-        <Route path = \"/myinfo\" element = {<MyInfo/>} />\n-        <Route path = \"/Write\" element = {<Write/>} />\n-        <Route path = \"/Qna\" element={<Qna/>}/>\n-        <Route path = \"/home\" element = {< Home/>}/>\n-        <Route path = \"/invite\" element={<Invite/>}/>\n-\n-      </Routes>\n-    </div>\n-    </BrowserRouter>\n-  );\n-}\n-\n export default App;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1690302314285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,12 +10,13 @@\n import Qna from './pages/Qna';\n import Invite from './pages/Invite';\n \n \n+\n function App() {\n   return (\n     <BrowserRouter>\n-    <Sidebar />\n+    \n     <div className=\"App\">\n       <Routes>\n         <Route path = \"/\" element={<Login/>}/>\n         <Route path = \"/profile\" element={<Profile/>}/>\n"
+                },
+                {
+                    "date": 1690302335646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n import MyInfo from './pages/MyInfo';\n import Write from './pages/Write';\n import Qna from './pages/Qna';\n import Invite from './pages/Invite';\n+import Sidebar from './'\n \n \n \n function App() {\n"
+                },
+                {
+                    "date": 1690302341918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n import MyInfo from './pages/MyInfo';\n import Write from './pages/Write';\n import Qna from './pages/Qna';\n import Invite from './pages/Invite';\n-import Sidebar from './'\n+import Sidebar from './components/common/'\n \n \n \n function App() {\n"
+                },
+                {
+                    "date": 1690302359970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n import MyInfo from './pages/MyInfo';\n import Write from './pages/Write';\n import Qna from './pages/Qna';\n import Invite from './pages/Invite';\n-import Sidebar from './components/common/'\n+import Sidebar from './components/common/Sidebar';\n \n \n \n function App() {\n@@ -25,8 +25,9 @@\n         <Route path = \"/Write\" element = {<Write/>} />\n         <Route path = \"/Qna\" element={<Qna/>}/>\n         <Route path = \"/home\" element = {< Home/>}/>\n         <Route path = \"/invite\" element={<Invite/>}/>\n+        <Route path = \"/sidebar\" element=\n \n       </Routes>\n     </div>\n     </BrowserRouter>\n"
+                },
+                {
+                    "date": 1690302368221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         <Route path = \"/Write\" element = {<Write/>} />\n         <Route path = \"/Qna\" element={<Qna/>}/>\n         <Route path = \"/home\" element = {< Home/>}/>\n         <Route path = \"/invite\" element={<Invite/>}/>\n-        <Route path = \"/sidebar\" element=\n+        <Route path = \"/sidebar\" element={<Sidebar/>}\n \n       </Routes>\n     </div>\n     </BrowserRouter>\n"
+                },
+                {
+                    "date": 1690302375776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         <Route path = \"/Write\" element = {<Write/>} />\n         <Route path = \"/Qna\" element={<Qna/>}/>\n         <Route path = \"/home\" element = {< Home/>}/>\n         <Route path = \"/invite\" element={<Invite/>}/>\n-        <Route path = \"/sidebar\" element={<Sidebar/>}\n+        <Route path = \"/sidebar\" element={<Sidebar/>} />\n \n       </Routes>\n     </div>\n     </BrowserRouter>\n"
                 }
             ],
             "date": 1689422190566,
