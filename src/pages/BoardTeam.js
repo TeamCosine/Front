@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import Card from "../components/QNA/Card";
+import Card from "../components/BoardTeam/Card";
 import BoardTitle from "../components/common/BoardTitle";
 
 const Container = styled.div`
@@ -12,30 +12,13 @@ const GridContainer = styled.div`
    grid-gap: 3vh;
    padding-left: 22vw;
    padding-right: 22vw;
-   padding-top: 5vh;
-`;
-const Title = styled.div`
-    margin-top : 15vh;
-    background-color: #e8f1fd;
-    border-radius: 15px;
-    width : 150px;
-    height : 50px;
-    font-weight : 800;
-    text-align: center;
-    justify-items :center;
-    display: flex-wrap;
-    justify-content: center;
-    margin-bottom: 3vh;
-    font-size: 30px;
-    margin-left : 22vw;
-    padding-top: 1vh;
-
+   padding-top: 2vh;
 `;
 
-const Qna =()=>{
+const BoardTeam =()=>{
     return (
         <>
-          <BoardTitle text={"❓ Q & A"}/>
+          <BoardTitle text={"👥 팀원모집 게시판"}/>
           <Container>
             <GridContainer>
             <Card/>
@@ -44,7 +27,7 @@ const Qna =()=>{
             <Card/>
             <Card/>
             <Card/>
-            <Card />
+            <Card/>
             <Card/>
             <Card/>
             </GridContainer>
@@ -53,4 +36,4 @@ const Qna =()=>{
     )
 }
 
-export default Qna;
+export default BoardTeam;

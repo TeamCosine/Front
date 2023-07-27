@@ -1,8 +1,9 @@
 import React from "react";
-import styled from 'styled-component';
+import styled from 'styled-components';
 import ColorCode from "../../utils/Palette";
 
-const ButtonMain = styled.button``;
+const ButtonMain = styled.button`
+`;
 const Button1 = styled.button``;
 
 

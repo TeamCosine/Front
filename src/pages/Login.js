@@ -106,7 +106,7 @@ const Login =() =>{
             <Invitebtn>회원가입</Invitebtn>
 
           </ButtonContainer>
-          <p>Eveleoper</p>
+          <p>Eveloper</p>
         </Logincontainer>
     )
 

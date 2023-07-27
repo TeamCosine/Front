@@ -10,6 +10,10 @@ import Write from './pages/Write';
 import Qna from './pages/Qna';
 import Invite from './pages/Invite';
 import Sidebar from './components/common/Sidebar';
+import BoardFree from './pages/BoardFree';
+import BoardInfo from './pages/BoardInfo';
+import BoardNotice from './pages/BoardNotice';
+import BoardTeam from './pages/BoardTeam';
 
 
 
@@ -27,6 +31,10 @@ function App() {
         <Route path = "/home" element = {< Home/>}/>
         <Route path = "/invite" element={<Invite/>}/>
         <Route path = "/sidebar" element={<Sidebar/>} />
+        <Route path = '/BoardFree' element={<BoardFree/>} />
+        <Route path = '/BoardInfo' element={<BoardInfo/>} />
+        <Route path = '/BoardNotice' element={<BoardNotice/>} />
+        <Route path = '/BoardTeam' element={<BoardTeam/>} />
 
       </Routes>
     </div>
