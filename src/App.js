@@ -14,6 +14,7 @@ import BoardFree from './pages/BoardFree';
 import BoardInfo from './pages/BoardInfo';
 import BoardNotice from './pages/BoardNotice';
 import BoardTeam from './pages/BoardTeam';
+import PostDetail from './pages/PostDetail';
 
 
 
@@ -23,7 +24,7 @@ function App() {
     
     <div className="App">
       <Routes>
-        <Route path = "/" element={<Login/>}/>
+        <Route path = "/Login" element={<Login/>}/>
         <Route path = "/profile" element={<Profile/>}/>
         <Route path = "/myinfo" element = {<MyInfo/>} />
         <Route path = "/Write" element = {<Write/>} />
@@ -35,6 +36,7 @@ function App() {
         <Route path = '/BoardInfo' element={<BoardInfo/>} />
         <Route path = '/BoardNotice' element={<BoardNotice/>} />
         <Route path = '/BoardTeam' element={<BoardTeam/>} />
+        <Route path = '/' element={<PostDetail/>} />
 
       </Routes>
     </div>
