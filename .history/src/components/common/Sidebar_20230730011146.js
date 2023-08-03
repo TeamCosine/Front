@@ -22,13 +22,13 @@ const Title = styled.div`
     
 `;
 const Menu =styled.div`
-   font-size: 21px;
+   font-size: 25px;
    font-weight: 600;
    color:black;
-   margin-top : 20px;
+   margin-top : 10px;
    text-decoration-line : none;
    text-align: left;
-   margin-left : 25px;
+   margin-left : 20px;
 
    
    
@@ -36,14 +36,11 @@ const Menu =styled.div`
 `;
 
 const Home = styled.div`
-   font-size: 25px;
+   font-size: 30px;
    font-weight: 700;
    color : black;
    margin-bottom :30px;
    text-decoration-line : none;
-   text-align: left;
-   margin-left : 25px;
-   margin-top: 45px;
     
 `;
 

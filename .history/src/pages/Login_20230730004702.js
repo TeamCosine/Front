@@ -32,15 +32,14 @@ const Container = styled.div`
     justify-content: space-between;
     width : 100vw;
     margin-bottom: 10vh;
-    
 `;
 const InputContainer = styled.div`
    display: flex;
    flex-direction: column;
    align-items: center;
    margin-top : 20px;
-   margin-right:20vw;
-   margin-left : -80vw;
+   margin-right:10vw;
+   margin-left : -60vw;
    
 `;
 const InputId = styled.input`
@@ -100,14 +99,13 @@ const Invitebtn = styled.button`
 
 const LoginIcon = styled(Loginicon)`
       margin-bottom : 5vh;
-      width : 40vw;
+      width : 50vw;
       
 `;
 
 const MainIcon = styled(Main)`
-     margin-right: -10vw;
+     margin-right: -40vw;
      width : 50vw;
-     margin-left: 10vw;
     
  `;
 
