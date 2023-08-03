@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 26,
             "patches": [
                 {
                     "date": 1691043433516,
@@ -44,6 +44,74 @@
                 {
                     "date": 1691043529802,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,20 +6,11 @@\n export default function(SpecificComponent,option ){\n     function AuthCheck(props) {\n         const dispatch = useDispatch();\n         useEffect(() =>{\n-            dispatch\n+            dispatch(auth()).then((response) =>{\n+                \n+            })\n         })\n     }\n \n-}\n-import React from \"react\";\n-import {useEffect} from 'react';\n-import { useDispatch } from \"react-redux\";\n-import {auth} from \"../__actions/user_actions\";\n-\n-export default function(SpecificComponent,option ){\n-    function AuthCheck(props) {\n-        const dispatch = useDispatch\n-    }\n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691043930018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     function AuthCheck(props) {\n         const dispatch = useDispatch();\n         useEffect(() =>{\n             dispatch(auth()).then((response) =>{\n-                \n+                ㅑㄹ(!ㄱㄷ네ㅐㅜㄴ)\n             })\n         })\n     }\n \n"
+                },
+                {
+                    "date": 1691043938712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     function AuthCheck(props) {\n         const dispatch = useDispatch();\n         useEffect(() =>{\n             dispatch(auth()).then((response) =>{\n-                ㅑㄹ(!ㄱㄷ네ㅐㅜㄴ)\n+                ㅑㄹ(!response.payload.isAuth)\n             })\n         })\n     }\n \n"
+                },
+                {
+                    "date": 1691043946919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,13 @@\n     function AuthCheck(props) {\n         const dispatch = useDispatch();\n         useEffect(() =>{\n             dispatch(auth()).then((response) =>{\n-                ㅑㄹ(!response.payload.isAuth)\n+                ㅑㄹ(!response.payload.isAuth) {\n+                    if (option) {\n+                        props.\n+                    }\n+                }\n             })\n         })\n     }\n \n"
+                },
+                {
+                    "date": 1691043955078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         useEffect(() =>{\n             dispatch(auth()).then((response) =>{\n                 ㅑㄹ(!response.payload.isAuth) {\n                     if (option) {\n-                        props.\n+                        props.his\n                     }\n                 }\n             })\n         })\n"
+                },
+                {
+                    "date": 1691043960652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         useEffect(() =>{\n             dispatch(auth()).then((response) =>{\n                 ㅑㄹ(!response.payload.isAuth) {\n                     if (option) {\n-                        props.his\n+                        props.history.push(\"/home\")\n                     }\n                 }\n             })\n         })\n"
+                },
+                {
+                    "date": 1691043982888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     function AuthCheck(props) {\n         const dispatch = useDispatch();\n         useEffect(() =>{\n             dispatch(auth()).then((response) =>{\n-                ㅑㄹ(!response.payload.isAuth) {\n+                if(!response.payload.isAuth) {\n                     if (option) {\n                         props.history.push(\"/home\")\n                     }\n                 }\n"
+                },
+                {
+                    "date": 1691043991338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         useEffect(() =>{\n             dispatch(auth()).then((response) =>{\n                 if(!response.payload.isAuth) {\n                     if (option) {\n-                        props.history.push(\"/home\")\n+                        props.history.push(\"/home\");\n                     }\n                 }\n             })\n         })\n"
+                },
+                {
+                    "date": 1691043997470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,10 @@\n                 if(!response.payload.isAuth) {\n                     if (option) {\n                         props.history.push(\"/home\");\n                     }\n+                } else {\n+                    if\n                 }\n             })\n         })\n     }\n"
+                },
+                {
+                    "date": 1691044011961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,11 @@\n                     if (option) {\n                         props.history.push(\"/home\");\n                     }\n                 } else {\n-                    if\n+                    if(option ===false) {\n+                        props.history.push(\"\")\n+                    }\n                 }\n             })\n         })\n     }\n"
+                },
+                {
+                    "date": 1691044017813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n                         props.history.push(\"/home\");\n                     }\n                 } else {\n                     if(option ===false) {\n-                        props.history.push(\"\")\n+                        props.history.push(\"/\");\n                     }\n                 }\n             })\n         })\n"
+                },
+                {
+                    "date": 1691044023811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n                     if(option ===false) {\n                         props.history.push(\"/\");\n                     }\n                 }\n-            })\n+            });\n         })\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691044034768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,8 @@\n                         props.history.push(\"/\");\n                     }\n                 }\n             });\n-        })\n+        }, [dispatch])\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691044040230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,8 @@\n                         props.history.push(\"/\");\n                     }\n                 }\n             });\n-        }, [dispatch])\n+        }, [dispatch, props.history]);\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691044048758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,9 @@\n                     }\n                 }\n             });\n         }, [dispatch, props.history]);\n+\n+        return <SpecificComponent />;\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691044063803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,7 @@\n \n         return <SpecificComponent />;\n     }\n \n+    return AuthCheck;\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691044107139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import {useEffect} from 'react';\n import { useDispatch } from \"react-redux\";\n import {auth} from \"../__actions/user_actions\";\n \n+// eslint-disable-next-line import/no-anonymous-default-export\n export default function(SpecificComponent,option ){\n     function AuthCheck(props) {\n         const dispatch = useDispatch();\n         useEffect(() =>{\n"
+                },
+                {
+                    "date": 1691083682191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,31 @@\n+import React from \"react\";\n+import {useEffect} from 'react';\n+import { useDispatch } from \"react-redux\";\n+import {auth} from \"../__actions/user_actions\";\n+\n+\n+\n+// eslint-disable-next-line import/no-anonymous-default-export\n+export default function(SpecificComponent,option ){\n+    function AuthCheck(props) {\n+        const dispatch = useDispatch();\n+        useEffect(() =>{\n+            dispatch(auth()).then((response) =>{\n+                if(!response.payload.isAuth) {\n+                    if (option) {\n+                        props.history.push(\"/home\");\n+                    }\n+                } else {\n+                    if(option ===false) {\n+                        props.history.push(\"/\");\n+                    }\n+                }\n+            });\n+        }, [dispatch, props.history]);\n+\n+        return <SpecificComponent />;\n+    }\n+\n+    return AuthCheck;\n+\n+}\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1691043433516,
