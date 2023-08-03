@@ -1,0 +1,34 @@
+{
+    "sourceFile": "src/__actions/user_actions.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1691043315234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1691043321547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n import axios from 'axios';\n+\n+export on\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691043333449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import axios from 'axios';\n \n-export on\n\\ No newline at end of file\n+export const INVITE_USER = \"INVITE_USER\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691043344601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,4 @@\n+import axios from 'axios';\n+\n+export const INVITE_USER = \"INVITE_USER\";\n+expoert const LOGIN_USER = \"LOGIN_USER\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691043349675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,4 @@\n import axios from 'axios';\n \n export const INVITE_USER = \"INVITE_USER\";\n-expoert const LOGIN_USER = \"LOGIN_USER\"\n-import axios from 'axios';\n-\n-export const INVITE_USER = \"INVITE_USER\"\n\\ No newline at end of file\n+export const LOGIN_USER = \"LOGIN_USER\";\n"
+                }
+            ],
+            "date": 1691043315234,
+            "name": "Commit-0",
+            "content": "import axios from 'axios';\n"
+        }
+    ]
+}
