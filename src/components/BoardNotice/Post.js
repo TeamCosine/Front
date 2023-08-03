@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -6,7 +6,7 @@ const Container = styled.div`
 const PostBox = styled.div`
     padding-left: 10px;
     padding-right: 5px;
-    margin: 26px 5vw 0px 22vw;
+    margin: 26px 15vw 0px 22vw;
     border-bottom: solid 2px #bdbdbd;
 `;
 const PostTitle = styled.div`
@@ -25,15 +25,24 @@ const PostDate = styled.div`
     margin-bottom: 5px;
 `;
 
-const Post =() =>{
+const Post =({data}) =>{
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        fetch("../localhost:3000/BoardNotice")
+    })
+    
+    const post = data.map((posting) =>
+        <PostBox>
+            <PostTitle>{posting.title}</PostTitle>
+            <PostDate>{posting.date}</PostDate>
+        </PostBox>
+    );
 
     return (
         <>
            <Container>
-                <PostBox>
-                    <PostTitle>서비스 업데이트 공지입니다.</PostTitle>
-                    <PostDate>2023-07-07</PostDate>
-                </PostBox>
+                {post}
            </Container>
         </>
     )

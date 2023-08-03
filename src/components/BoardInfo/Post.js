@@ -6,7 +6,7 @@ const Container = styled.div`
 const PostBox = styled.div`
     padding-left: 10px;
     padding-right: 5px;
-    margin: 40px 5vw 0px 22vw;
+    margin: 40px 15vw 0px 22vw;
     border-bottom: solid 3px #bdbdbd;
 `;
 const PostTitle = styled.div`
