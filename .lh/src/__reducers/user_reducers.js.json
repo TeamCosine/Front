@@ -3,11 +3,55 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 11,
             "patches": [
                 {
                     "date": 1691043282295,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1691083376140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import {\n-    \n+   \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691083391852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+import {\n+   REGISTER_USER,\n+   LOGIN_USER,\n+   AUTH_USER,\n+} from \"../\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691083398387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,5 @@\n import {\n    REGISTER_USER,\n    LOGIN_USER,\n    AUTH_USER,\n-} from \"../\"\n-import {\n-   \n-}\n\\ No newline at end of file\n+} from \"../__actions/user_actions\"\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691083413275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n import {\n    REGISTER_USER,\n    LOGIN_USER,\n    AUTH_USER,\n-} from \"../__actions/user_actions\"\n\\ No newline at end of file\n+} from \"../__actions/user_actions\";\n+\n+export default function user(state = {},)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691083420751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,7 @@\n    LOGIN_USER,\n    AUTH_USER,\n } from \"../__actions/user_actions\";\n \n-export default function user(state = {},)\n\\ No newline at end of file\n+export default function user(state = {}, action ){\n+    switch\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691083430981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+import {\n+   REGISTER_USER,\n+   LOGIN_USER,\n+   AUTH_USER,\n+} from \"../__actions/user_actions\";\n+\n+export default function user(state = {}, action ){\n+    switch(action.type) {\n+        case REGISTER_USER\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691083436102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import {\n+   REGISTER_USER,\n+   LOGIN_USER,\n+   AUTH_USER,\n+} from \"../__actions/user_actions\";\n+\n+export default function user(state = {}, action ){\n+    switch(action.type) {\n+        case REGISTER_USER:\n+            return\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691083444301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import {\n+   REGISTER_USER,\n+   LOGIN_USER,\n+   AUTH_USER,\n+} from \"../__actions/user_actions\";\n+\n+export default function user(state = {}, action ){\n+    switch(action.type) {\n+        case REGISTER_USER:\n+            return(...state, register : action)\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691083459995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,39 +6,7 @@\n \n export default function user(state = {}, action ){\n     switch(action.type) {\n         case REGISTER_USER:\n-            return(...state, register : action)\n+            return {...state, regi}\n     }\n-}\n-import {\n-   REGISTER_USER,\n-   LOGIN_USER,\n-   AUTH_USER,\n-} from \"../__actions/user_actions\";\n-\n-export default function user(state = {}, action ){\n-    switch(action.type) {\n-        case REGISTER_USER:\n-            return\n-    }\n-}\n-import {\n-   REGISTER_USER,\n-   LOGIN_USER,\n-   AUTH_USER,\n-} from \"../__actions/user_actions\";\n-\n-export default function user(state = {}, action ){\n-    switch(action.type) {\n-        case REGISTER_USER\n-    }\n-}\n-import {\n-   REGISTER_USER,\n-   LOGIN_USER,\n-   AUTH_USER,\n-} from \"../__actions/user_actions\";\n-\n-export default function user(state = {}, action ){\n-    switch\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691083467979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n \n export default function user(state = {}, action ){\n     switch(action.type) {\n         case REGISTER_USER:\n-            return {...state, register : }\n+            return {...state, register : action.payload}\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691083473709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,7 @@\n export default function user(state = {}, action ){\n     switch(action.type) {\n         case REGISTER_USER:\n             return {...state, register : action.payload};\n+            \n     }\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1691043282295,

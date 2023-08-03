@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 18,
             "patches": [
                 {
                     "date": 1691043315234,
@@ -24,6 +24,62 @@
                 {
                     "date": 1691043349675,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,4 @@\n import axios from 'axios';\n \n export const INVITE_USER = \"INVITE_USER\";\n-expoert const LOGIN_USER = \"LOGIN_USER\"\n-import axios from 'axios';\n-\n-export const INVITE_USER = \"INVITE_USER\"\n\\ No newline at end of file\n+export const LOGIN_USER = \"LOGIN_USER\";\n"
+                },
+                {
+                    "date": 1691044182302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,9 @@\n import axios from 'axios';\n \n export const INVITE_USER = \"INVITE_USER\";\n export const LOGIN_USER = \"LOGIN_USER\";\n+export const AUTH_USER = \"AUTH_USER\";\n+\n+export function inviteUser(dataToSubmit) {\n+    const request = axios.post(\"/regis\")\n+}\n"
+                },
+                {
+                    "date": 1691044262305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+import axios from 'axios';\n+\n+export const INVITE_USER = \"INVITE_USER\";\n+export const LOGIN_USER = \"LOGIN_USER\";\n+export const AUTH_USER = \"AUTH_USER\";\n+\n+export function inviteUser(dataToSubmit) {\n+    const request = axios.post(\"/\", )\n+}\n"
+                },
+                {
+                    "date": 1691044275210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,15 +4,6 @@\n export const LOGIN_USER = \"LOGIN_USER\";\n export const AUTH_USER = \"AUTH_USER\";\n \n export function inviteUser(dataToSubmit) {\n-    const request = axios.post(\"/\", )\n+    const request = axios.post(\"/users/new\", )\n }\n-import axios from 'axios';\n-\n-export const INVITE_USER = \"INVITE_USER\";\n-export const LOGIN_USER = \"LOGIN_USER\";\n-export const AUTH_USER = \"AUTH_USER\";\n-\n-export function inviteUser(dataToSubmit) {\n-    const request = axios.post(\"/regis\")\n-}\n"
+                },
+                {
+                    "date": 1691044289337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,6 @@\n export const LOGIN_USER = \"LOGIN_USER\";\n export const AUTH_USER = \"AUTH_USER\";\n \n export function inviteUser(dataToSubmit) {\n-    const request = axios.post(\"/users/new\", )\n+    const request = axios.post(\"/users/new-user\", dataToSubmit)\n }\n"
+                },
+                {
+                    "date": 1691044298974,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,6 @@\n export const AUTH_USER = \"AUTH_USER\";\n \n export function inviteUser(dataToSubmit) {\n     const request = axios.post(\"/users/new-user\", dataToSubmit)\n+    .then ((response) => response.data)\n }\n"
+                },
+                {
+                    "date": 1691044315271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,10 @@\n export const AUTH_USER = \"AUTH_USER\";\n \n export function inviteUser(dataToSubmit) {\n     const request = axios.post(\"/users/new-user\", dataToSubmit)\n-    .then ((response) => response.data)\n+    .then ((response) => response.data);\n+    return {\n+        type : REGISTER_USER, \n+        payload : request,\n+    }\n }\n"
+                },
+                {
+                    "date": 1691044321754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n export function inviteUser(dataToSubmit) {\n     const request = axios.post(\"/users/new-user\", dataToSubmit)\n     .then ((response) => response.data);\n     return {\n-        type : REGISTER_USER, \n+        type : INVITE_USER_USER, \n         payload : request,\n     }\n }\n"
+                },
+                {
+                    "date": 1691045934395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,10 @@\n export function inviteUser(dataToSubmit) {\n     const request = axios.post(\"/users/new-user\", dataToSubmit)\n     .then ((response) => response.data);\n     return {\n-        type : INVITE_USER_USER, \n+        type : INVITE_USER, \n         payload : request,\n     }\n }\n+\n+expoe\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691045943419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,5 @@\n         payload : request,\n     }\n }\n \n-expoe\n\\ No newline at end of file\n+export function loginUser(dataToBu)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691045954085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,7 @@\n         payload : request,\n     }\n }\n \n-export function loginUser(dataToBu)\n\\ No newline at end of file\n+export function loginUser(dataToSubmit) {\n+    const request = axios.post(\"l\")\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691045965580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,6 +13,6 @@\n     }\n }\n \n export function loginUser(dataToSubmit) {\n-    const request = axios.post(\"l\")\n+    const request = axios.post(\"/login/user\", )\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691045971918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,6 +13,6 @@\n     }\n }\n \n export function loginUser(dataToSubmit) {\n-    const request = axios.post(\"/login/user\", )\n+    const request = axios.post(\"/login/user\", dataToSubmit).then\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691045979355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,6 +13,8 @@\n     }\n }\n \n export function loginUser(dataToSubmit) {\n-    const request = axios.post(\"/login/user\", dataToSubmit).then ((response ))\n+    const request = axios.post(\"/login/user\", dataToSubmit).then ((response ) =>{\n+        \n+    })\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691083212451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import axios from 'axios';\n+\n+export const INVITE_USER = \"INVITE_USER\";\n+export const LOGIN_USER = \"LOGIN_USER\";\n+export const AUTH_USER = \"AUTH_USER\";\n+\n+export function inviteUser(dataToSubmit) {\n+    const request = axios.post(\"/users/new-user\", dataToSubmit)\n+    .then ((response) => response.data);\n+    return {\n+        type : INVITE_USER, \n+        payload : request,\n+    }\n+}\n+\n+export function loginUser(dataToSubmit) {\n+    const request = axios.post(\"/login/user\", dataToSubmit).then ((response ) =>)\n+}\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1691043315234,
