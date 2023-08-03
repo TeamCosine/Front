@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from 'styled-components';
 import BoardTitle from "../components/common/BoardTitle";
 import Post from "../components/BoardNotice/Post";
 import { useNavigate } from "react-router-dom";
 import TopPost from "../components/BoardNotice/TopPost";
+import DummyData from "../utils/DummyData";
+import Pagination from "../components/BoardNotice/Pagination";
 
 const Container = styled.div``;
 const Button = styled.button`
@@ -27,6 +29,17 @@ const BoardNotice =({navigation})=>{
         navigate("/Write");
     };
 
+    const [page, setPage] = useState(1);
+    const limit = 5;
+    const offset = (page - 1) * limit;
+
+    const postsData = (posts) => {
+        if(posts){
+            let result = posts.slice(offset, offset + limit);
+            return result;
+        }
+    }
+
     return (
         <>
         <Container>
@@ -34,10 +47,8 @@ const BoardNotice =({navigation})=>{
             <TopPost/>
             <TopPost/>
             <TopPost/>
-            <Post/>
-            <Post/>
-            <Post/>
-            <Post/>
+            <Post data={postsData(DummyData.posts)}/>
+            <Pagination limit={limit} page={page} totalPosts={DummyData.posts.length} setPage={setPage}/>
         </Container>
         </>
     )

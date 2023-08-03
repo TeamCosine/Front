@@ -7,7 +7,7 @@ const Container = styled.div`
 const PostBox = styled.div`
     padding-top: 10px;
     padding-right: 10px;
-    margin: 10px 5vw 0px 22vw;
+    margin: 10px 15vw 0px 22vw;
     background-color: ${ColorCode.Pink};
     border-radius: 10px;
 `;
