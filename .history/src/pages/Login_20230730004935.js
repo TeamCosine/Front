@@ -39,7 +39,7 @@ const InputContainer = styled.div`
    flex-direction: column;
    align-items: center;
    margin-top : 20px;
-   margin-right:20vw;
+   margin-right:10vw;
    margin-left : -80vw;
    
 `;

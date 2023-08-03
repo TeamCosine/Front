@@ -39,7 +39,7 @@ const InputContainer = styled.div`
    flex-direction: column;
    align-items: center;
    margin-top : 20px;
-   margin-right:20vw;
+   margin-right:10vw;
    margin-left : -80vw;
    
 `;
@@ -105,9 +105,8 @@ const LoginIcon = styled(Loginicon)`
 `;
 
 const MainIcon = styled(Main)`
-     margin-right: -10vw;
+     margin-right: -50vw;
      width : 50vw;
-     margin-left: 10vw;
     
  `;
 

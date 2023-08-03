@@ -31,16 +31,14 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     width : 100vw;
-    margin-bottom: 10vh;
-    
 `;
 const InputContainer = styled.div`
    display: flex;
    flex-direction: column;
    align-items: center;
    margin-top : 20px;
-   margin-right:20vw;
-   margin-left : -80vw;
+   margin-right:10vw;
+   margin-left : -35vw;
    
 `;
 const InputId = styled.input`
@@ -71,8 +69,7 @@ const ButtonContainer= styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
+    margin-bottom: 18vh;
     
    `;
 const Loginbtn = styled.button`
@@ -99,15 +96,11 @@ const Invitebtn = styled.button`
 `;
 
 const LoginIcon = styled(Loginicon)`
-      margin-bottom : 5vh;
-      width : 40vw;
-      
+      margin-bottom : 2vh;
 `;
 
 const MainIcon = styled(Main)`
-     margin-right: -10vw;
-     width : 50vw;
-     margin-left: 10vw;
+     padding-right: 20vw;
     
  `;
 
@@ -131,7 +124,7 @@ const Login =() =>{
             <Invitebtn>회원가입</Invitebtn>
 
           </ButtonContainer>
-         
+          <p>Eveleoper</p>
         </Logincontainer>
     )
 

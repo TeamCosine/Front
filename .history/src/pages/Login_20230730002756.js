@@ -10,8 +10,6 @@ const Logincontainer= styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:100vw;
-
   
 `;
 
@@ -27,11 +25,6 @@ const Title = styled.p`
    
 `;
 const Container = styled.div`
-   display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width : 100vw;
-    margin-bottom: 10vh;
     
 `;
 const InputContainer = styled.div`
@@ -39,8 +32,6 @@ const InputContainer = styled.div`
    flex-direction: column;
    align-items: center;
    margin-top : 20px;
-   margin-right:20vw;
-   margin-left : -80vw;
    
 `;
 const InputId = styled.input`
@@ -71,8 +62,7 @@ const ButtonContainer= styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
+    margin-bottom: 18vh;
     
    `;
 const Loginbtn = styled.button`
@@ -98,18 +88,9 @@ const Invitebtn = styled.button`
 
 `;
 
-const LoginIcon = styled(Loginicon)`
-      margin-bottom : 5vh;
-      width : 40vw;
-      
-`;
+const LoginIcon = styled(Loginicon)``;
 
-const MainIcon = styled(Main)`
-     margin-right: -10vw;
-     width : 50vw;
-     margin-left: 10vw;
-    
- `;
+const MainIcon = styled(MainIcon)
 
 const Login =() =>{
 
@@ -117,21 +98,21 @@ const Login =() =>{
         <Logincontainer>
           <Title>이화인들을 위한, 이화인들에 의한 개발자 커뮤니티</Title>
           <Container>
-              <MainIcon />
+
 
             <InputContainer>
                <LoginIcon/>
                <InputId />
                <InputPW />
             </InputContainer>
-            
+
           </Container>
           <ButtonContainer>
             <Loginbtn>로그인</Loginbtn>
             <Invitebtn>회원가입</Invitebtn>
 
           </ButtonContainer>
-         
+          <p>Eveloper</p>
         </Logincontainer>
     )
 

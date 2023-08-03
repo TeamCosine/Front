@@ -22,10 +22,10 @@ const Title = styled.div`
     
 `;
 const Menu =styled.div`
-   font-size: 21px;
+   font-size: 20px;
    font-weight: 600;
    color:black;
-   margin-top : 20px;
+   margin-top : 10px;
    text-decoration-line : none;
    text-align: left;
    margin-left : 25px;
@@ -42,8 +42,7 @@ const Home = styled.div`
    margin-bottom :30px;
    text-decoration-line : none;
    text-align: left;
-   margin-left : 25px;
-   margin-top: 45px;
+   
     
 `;
 
