@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/__reducers/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1691043006736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1691043018031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-import { combineReducers } from \"redux\";\n\\ No newline at end of file\n+import { combineReducers } from \"redux\";\n+\n+const rootReducer = combine\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691043024756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,5 @@\n import { combineReducers } from \"redux\";\n \n-const rootReducer = combine\n\\ No newline at end of file\n+const rootReducer = combineReducers({\n+    user,\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691043037697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,6 @@\n+import { combineReducers } from \"redux\";\n+import user from './user_reducers'\n+\n+const rootReducer = combineReducers({\n+    user,\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691043047015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import { combineReducers } from \"redux\";\n+import user from './user_reducers';\n+\n+const rootReducer = combineReducers({\n+    user,\n+})\n+\n+export default \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1691043052549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,16 +4,5 @@\n const rootReducer = combineReducers({\n     user,\n })\n \n-export default \n-import { combineReducers } from \"redux\";\n-import user from './user_reducers'\n-\n-const rootReducer = combineReducers({\n-    user,\n-})\n-import { combineReducers } from \"redux\";\n-\n-const rootReducer = combineReducers({\n-    user,\n-})\n\\ No newline at end of file\n+export default rootReducer;\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1691043006736,
+            "name": "Commit-0",
+            "content": "import { combineReducers } from \"redux\";"
+        }
+    ]
+}
